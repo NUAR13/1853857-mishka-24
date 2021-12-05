@@ -33,110 +33,65 @@
       </div>
     </nav>
   </header>
-  <main class="main-page">
+  <main class="main-form">
     <section class="menu">
       <header class="menu__product-info">
         <a class="menu__link menu__link--new" href="#">Новые поступления</a>
         <a class="menu__link menu__link--scale" href="#">Распродажа</a>
         <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
       </header>
-      <h1 class="menu__main-heading">Милые штуки ручной работы для дома</h1>
-      <ul class="menu__list-product">
-        <li class="menu__product-item">Предметы интерьера</li>
-        <li class="menu__product-item">Детские игрушки</li>
-      </ul>
+      <h1 class="menu__main-heading">Каталог товаров</h1>
     </section>
-    <section class="product-week">
-      <h2 class="product-week__heading">Товар недели</h2>
-      <div class="product-week__conteiner">
-        <h3 class="product-week__heading">Вязаные корзинки</h3>
-        <p class="product-week__info-product info-product">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <ul class="product-week__list-specifications">
-          <li class="product-week__item">
-            <span class="product-week__naming">Цвет:</span>
-            <span class="product-week__naming">«Тиффани»/серый</span>
-          </li>
-          <li class="product-week__item">
-            <span class="product-week__naming">Диаметр:</span>
-            <span class="product-week__naming">25 см</span>
-          </li>
-          <li class="product-week__item">
-            <span class="product-week__naming">Высота:</span>
-            <span class="product-week__naming">15 см</span>
-          </li>
-        </ul>
-        <div class="product-week__img">
-          <img src="img/triple-set.jpg" width="525" height="636" alt="Товар вязаные корзинки">
-        </div>
-        <p class="product-week__price price">Цена: 990 руб.</p>
-        <a class="button button-week" href="#">Заказать</a>
-      </div>
-    </section>
-    <section class="info">
-      <h2 class="info__heading">Коротко о нас:</h2>
-      <ul class="info__list-description">
-        <li class="info__item">
-          <p class="info__description">Экологически чистые материалы</p>
-        </li>
-        <li class="info__item">
-          <p class="info__description">Связано вручную с любовью и умилением</p>
-        </li>
-        <li class="info__item">
-          <p class="info__description">Скандинавский стиль по российской цене</p>
-        </li>
-        <li class="info__item">
-          <p class="info__description">Поддержка отечественного производителя</p>
-        </li>
-        <li class="info__item">
-          <p class="info__description">Увеличивает лайки на фотографиях</p>
-        </li>
-        <li class="info__item">
-          <p class="info__description">Поставляется в подарочной упаковке</p>
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__heading">Отзывы</h2>
-      <div class="revviews__slider">
-        <div class="reviews__slider-item">
-          <p class="reviews__visitor">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-            у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <div class="reviews__conteiner">
-            <span class="reviews__name-visitor">Анастасия Красильникова</span>
-            <span class="reviews__email-visitor">@misssssiskrasа</span>
-          </div>
-          <div class="reviews__conteiner-pref">
-            <a class="button pref-reviews" href="#">
-              <span class="visually-hidden">Преведущий отзыв</span>
-            </a>
-          </div>
-          <div class="reviews__conteiner-next">
-            <a class="button next-reviews" href="#">
-              <span class="visually-hidden">Следующий отзыв</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a class="button">Написать</a>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__heading">Контакты</h2>
-      <ul class="contacts__address">
-        <li class="contacts__item">
-          <span class="contacts__email">e-mail:</span>
-          <a href="#">
-          <span class="contacts__address-email">info@mimimishkashop.ru</span>
+    <section class="card-product">
+      <h2 class="visually-hidden">Карточки товаров</h2>
+      <ul class="card-product__list">
+        <li class="card-product__item">
+          <a class="card-product__link" href="#">
+            <img class="card-product__img" src="img/hare.jpg" width="316" height="462">
+            <h3 class="card-product__heading">Зайчик-попрыгайчик</h3>
           </a>
+          <p class="card-product__options">Рост 30 см, вес 200 г</p>
+          <span class="card-product__price">1 200 руб.</span>
+          <button class="card-product__button-basket">
+            <svg class="list__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+          </button>
         </li>
-        <li class="contacts__item">
-          <span class="contacts__address-text">адрес:</span>
-          <span class="contacts__address-location">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+        <li class="card-product__item">
+          <a class="card-product__link" href="#">
+            <img class="card-product__img" src="img/basket.jpg" width="316" height="462">
+            <h3 class="card-product__heading">Корзинка для белья</h3>
+          </a>
+          <p class="card-product__options">Диаметр 15 см, высота 10 см</p>
+          <span class="card-product__price">690 руб.</span>
+          <button class="card-product__button-basket">
+            <svg class="list__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+          </button>
+        </li>
+        <li class="card-product__item">
+          <a class="card-product__link" href="#">
+            <img class="card-product__img" src="img/big-basket.jpg" width="316" height="462">
+            <h3 class="card-product__heading">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="card-product__options">Диаметр 30 см, высота 30 см</p>
+          <span class="card-product__price">1 500 руб.</span>
+          <button class="card-product__button-basket">
+            <svg class="list__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+          </button>
         </li>
       </ul>
-      <a class="button contacts-map-link" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
-      <div class="contacts__map-conteiner">
-        <img src="img/map-desktop.jpg" width="527" height="457" alt="Адрес на карте">
+    </section>
+    <section class="production">
+      <div class="production__conteiner">
+        <span class="production__decoration-elem"></span>
+        <h2 class="production__heading">Процесс производства</h2>
       </div>
+      <video class="production__video" width="668" height="455" preload="none" poster="img/video.jpg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogv" type="video/ogg">
+        <source src="video.webm" type="video/webm">
+      </video>
+      <p class="production__info-video">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <button class="button" type="button">Сделать заказ</button>
     </section>
   </main>
   <footer class="footer-page">
