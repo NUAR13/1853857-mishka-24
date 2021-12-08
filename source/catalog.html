@@ -40,9 +40,9 @@
         <a class="menu__link menu__link--scale" href="#">Распродажа</a>
         <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
       </header>
-      <h1 class="menu__main-heading">Каталог товаров</h1>
+      <h1 class="menu__main-heading indentation">Каталог товаров</h1>
     </section>
-    <section class="card-product card-indentation">
+    <section class="card-product indentation">
       <h2 class="visually-hidden">Карточки товаров</h2>
       <ul class="card-product__list">
         <li class="card-product__item">
@@ -57,36 +57,48 @@
           </div>
           <div class="card-product__wrapper-price">
             <span class="card-product__price">1 200 руб.</span>
+            <button class="card-product__button-basket">
+              <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            </button>
           </div>
-          <button class="card-product__button-basket">
-            <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
-          </button>
         </li>
         <li class="card-product__item">
-          <a class="card-product__link" href="#">
+          <a class="card-product__link-img" href="#">
             <img class="card-product__img" src="img/basket.jpg" width="316" height="462">
-            <h3 class="card-product__heading">Корзинка для белья</h3>
           </a>
-          <p class="card-product__options">Диаметр 15 см, высота 10 см</p>
-          <span class="card-product__price">690 руб.</span>
-          <button class="card-product__button-basket">
-            <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
-          </button>
+          <div class="card-product__wrapper">
+            <a class="card-product__link-heading" href="#">
+              <h3 class="card-product__heading">Корзинка для белья</h3>
+            </a>
+            <p class="card-product__options">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="card-product__wrapper-price">
+            <span class="card-product__price">690 руб.</span>
+            <button class="card-product__button-basket">
+              <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            </button>
+          </div>
         </li>
         <li class="card-product__item">
-          <a class="card-product__link" href="#">
+          <a class="card-product__link-img" href="#">
             <img class="card-product__img" src="img/big-basket.jpg" width="316" height="462">
-            <h3 class="card-product__heading">Большая корзинка для игрушек</h3>
           </a>
-          <p class="card-product__options">Диаметр 30 см, высота 30 см</p>
-          <span class="card-product__price">1 500 руб.</span>
-          <button class="card-product__button-basket">
-            <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
-          </button>
+          <div class="card-product__wrapper">
+            <a class="card-product__link-heading" href="#">
+              <h3 class="card-product__heading">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="card-product__options">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="card-product__wrapper-price">
+            <span class="card-product__price">1 500 руб.</span>
+            <button class="card-product__button-basket">
+              <svg class="card-product__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+            </button>
+          </div>
         </li>
       </ul>
     </section>
-    <section class="production production-indentation">
+    <section class="production indentation">
       <h2 class="production__heading">Процесс производства</h2>
       <div class="production__wrapper">
         <video class="production__video" width="668" height="455" preload="none" poster="img/video.jpg">
@@ -103,7 +115,7 @@
         </a>
       </div>
       <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="button" type="button">Сделать заказ</button>
+      <a class="button" href="#">Сделать заказ</a>
     </section>
   </main>
   <footer class="footer-page">

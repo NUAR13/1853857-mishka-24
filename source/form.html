@@ -40,9 +40,9 @@
         <a class="menu__link menu__link--scale" href="#">Распродажа</a>
         <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
       </header>
-      <h1 class="menu__main-heading">Вязание на заказ</h1>
+      <h1 class="menu__main-heading indentation">Вязание на заказ</h1>
     </section>
-    <section class="form">
+    <section class="form indentation">
       <h2 class="visually-hidden">Форма заказа</h2>
       <p class="form__heading">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -136,21 +136,24 @@
             <label class="form__item-title" for="phone">Тел:</label>
             <div class="form__contacts-container">
               <input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <span class="form__decoration-phone form__decoration-icon--phone"></span>
+              <span class="form__decoration-phone form__decoration-phone--icon"></span>
             </div>
           </div>
           <div class="form__contacts-item">
             <label class="form__item-title" for="e-mail">E-mail</label>
             <div class="form__contacts-container">
               <input class="form__input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
-              <span class="form__decoration-email form__decoration-icon--email"></span>
+              <span class="form__decoration-email form__decoration-email--icon"></span>
             </div>
           </div>
         </fieldset>
         <fieldset class="form__additionally">
-          <textarea name="form__additionally-field" id="additionally" placeholder="Опишите все ваши пожелания к заказу" rows="5" cols="15"></textarea>
-          <button type="button">Отправить заказ</button>
-          <p class="form__fill-field">*Поля обязательны для заполнения</p>
+          <h3 class="form__item-title">Доп</h3>
+          <textarea name="form__additionally-field" id="additionally" placeholder="Опишите все ваши пожелания к заказу" cols="15"></textarea>
+        </fieldset>
+        <fieldset class="form__fill-field">
+          <button type="submit">Отправить заказ</button>
+          <p class="form__field-text">*Поля обязательны для заполнения</p>
         </fieldset>
       </form>
     </section>
