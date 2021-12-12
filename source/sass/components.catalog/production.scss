@@ -6,7 +6,7 @@
   display: inline-block;
   margin-top: 49px;
   margin-bottom: 0;
-  .size-font(20px, 24px);
+  @include size-font (20px, 24px);
   max-width: 172px;
 }
 
@@ -25,8 +25,8 @@
 }
 
 .production__info {
-  .size-font(15px, 30px);
-  color: @base-color;
+  @include size-font (15px, 30px);
+  color: $base-color;
   max-width: 252px;
   margin-top: 27px;
 }
@@ -36,11 +36,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  .size-font(17px, 16px);
+  @include size-font(17px, 16px);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: @base-color;
+  color: $base-color;
   border: 2px solid #444444;
   max-width: 230px;
   min-height: 52px;

@@ -11,7 +11,7 @@
 }
 
 .contacts__heading {
-  .size-font(53px, 57px);
+  @include size-font(53px, 57px);
   margin: 0;
 }
 
@@ -38,12 +38,12 @@
 
 .contacts-map-link {
   display: flex;
-  .size-font(17px, 20px);
+  @include size-font(17px, 20px);
   font-weight: bold;
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  color: @base-color;
+  color: $base-color;
   text-decoration: none;
   text-transform: uppercase;
   width: 230px;
@@ -55,6 +55,6 @@
   margin-left: auto;
 
   .contacts__map-icon {
-    .size-block(527px, 457px);
+    @include size-block(527px, 457px);
   }
 }

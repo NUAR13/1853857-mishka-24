@@ -5,7 +5,7 @@
 }
 
 .info__heading {
-  .size-font(53px, 57px);
+  @include size-font(53px, 57px);
   margin-bottom: 95px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .info__description {
-  .size-font(20px, 22px);
+  @include size-font(20px, 22px);
   font-weight: bold;
 }
 
@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(33px,38px);
+  @include size-block(33px,38px);
 }
 
 .clew::before {
@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(35px,34px);
+  @include size-block(35px,34px);
 }
 
 .bill::before {
@@ -56,7 +56,7 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(42px,27px);
+  @include size-block(42px,27px);
 }
 
 .rocket::before {
@@ -66,7 +66,7 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(55px,23px);
+  @include size-block(55px,23px);
 }
 
 .like::before {
@@ -76,7 +76,7 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(34px,27px);
+  @include size-block(34px,27px);
 }
 
 .present::before {
@@ -86,5 +86,5 @@
   background-repeat: no-repeat;
   top: -38px;
   display: block;
-  .size-block(33px,32px);
+  @include size-block(33px,32px);
 }

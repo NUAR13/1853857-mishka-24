@@ -13,20 +13,20 @@
   text-decoration: none;
   color: #000000;
   padding-right: 50px;
-  .size-font(15px,24px);
+  @include size-font(15px,24px);
   font-weight: 700;
 
   &--delivery {
     font-weight: 400;
     margin-left: auto;
-    color: @base-color;
+    color: $base-color;
     padding-right: 0;
   }
 }
 
 .menu__main-heading {
   text-align: center;
-  .size-font(53px,57px);
+  @include size-font(53px,57px);
   margin-top: 114px;
   margin-bottom: 353px;
 }
@@ -53,8 +53,8 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  .size-block(139px, 60px);
-  .size-font(20px,30px);
+  @include size-block(139px, 60px);
+  @include size-font(20px,30px);
   margin-right: auto;
 }
 

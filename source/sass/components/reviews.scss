@@ -4,7 +4,7 @@
 }
 
 .reviews__heading {
-  .size-font(53px, 57px);
+  @include size-font(53px, 57px);
   margin-left: 174px;
   margin-top: 0;
   margin-bottom: 35px;
@@ -21,8 +21,8 @@
 }
 
 .reviews__visitor {
-  .size-font(17px, 30px);
-  color: @base-color;
+  @include size-font(17px, 30px);
+  color: $base-color;
 }
 
 .reviews__conteiner {
@@ -40,12 +40,12 @@
   position: absolute;
   right: 70px;
   top: 70px;
-  .size-font(17px, 20px);
+  @include size-font(17px, 20px);
   font-weight: bold;
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  color: @base-color;
+  color: $base-color;
   text-decoration: none;
   text-transform: uppercase;
   width: 175px;

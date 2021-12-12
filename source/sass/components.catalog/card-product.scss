@@ -29,15 +29,15 @@
 }
 
 .card-product__heading {
-  .size-font(20px, 24px);
+  @include size-font(20px, 24px);
   color: #000000;
   margin-top: 0;
   margin-bottom: 6px;
 }
 
 .card-product__options {
-  .size-font(15px, 30px);
-  color: @base-color;
+  @include size-font(15px, 30px);
+  color: $base-color;
   margin: 0;
 }
 
@@ -50,9 +50,9 @@
 }
 
 .card-product__price {
-  .size-font(15px, 30px);
+  @include size-font(15px, 30px);
   font-weight: bold;
-  color: @base-color;
+  color: $base-color;
   margin: 0;
 }
 

@@ -24,14 +24,14 @@
 }
 
 .modal-conteiner__heading {
-  .size-font(30px, 57px);
+  @include size-font(30px, 57px);
   margin: 0;
   text-transform: uppercase;
   text-align: center;
 }
 
 .modal-conteiner__size-selection {
-  .size-font(17px, 30px);
+  @include size-font(17px, 30px);
   text-align: center;
   margin-top: 11px;
   margin-bottom: 0;
@@ -52,12 +52,12 @@
 
 .modal-conteiner__button-size {
   display: flex;
-  .size-font(17px, 16px);
+  @include size-font(17px, 16px);
   font-weight: bold;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  color: @base-color;
+  color: $base-color;
   text-decoration: none;
   text-transform: uppercase;
   width: 112px;
@@ -72,7 +72,7 @@
 
 .button-modal {
   display: flex;
-  .size-font(17px, 16px);
+  @include size-font(17px, 16px);
   font-weight: bold;
   justify-content: center;
   align-items: center;

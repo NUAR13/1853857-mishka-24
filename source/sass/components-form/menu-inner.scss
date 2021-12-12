@@ -4,7 +4,7 @@
 }
 
 .menu-inner__heading {
-  .size-font(53px, 57px);
+  @include size-font(53px, 57px);
   text-align: center;
   margin-top: 58px;
 }
