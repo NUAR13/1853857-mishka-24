@@ -1,32 +1,49 @@
 .info {
+  padding-top: 31px;
+  /*
   margin-top: 68px;
   padding-left: 225px;
-  padding-right: 250px;
+  padding-right: 250px;*/
 }
 
 .info__heading {
+  @include size-font(25px, 30px);
+  margin-bottom: 82px
+  /*
   @include size-font(53px, 57px);
-  margin-bottom: 95px;
+  margin-bottom: 95px;*/
 }
 
 .info__list-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  /*
   display: grid;
   grid-template-columns: repeat(2, minmax(235px, 325px));
   gap: 57px 87px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0;*/
 }
 
 .info__item {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .info__description {
-  @include size-font(20px, 22px);
+  @include size-font(17px, 20px);
   font-weight: bold;
+  /*
+  @include size-font(20px, 22px);
+  font-weight: bold;*/
 }
 
 .flower::before {

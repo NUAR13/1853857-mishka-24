@@ -1,9 +1,24 @@
 .product-week {
   display: flex;
-  margin-top: 54px;
+  flex-direction: column;
+  padding-top: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*
+  display: flex;
+  margin-top: 54px;*/
 }
 
 .product-week__heading {
+  @include size-font(17px, 20px);
+  font-weight: 700;
+  color: #63d1bb;
+  text-transform: uppercase;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  /*
   @include size-font(17px, 17px);
   font-weight: 700;
   color: #63d1bb;
@@ -12,7 +27,7 @@
   width: 100px;
   margin-top: 69px;
   margin-left: 32px;
-  margin-right: 75px;
+  margin-right: 75px;*/
 }
 
 .product-week__conteiner {
@@ -23,29 +38,44 @@
 
 .product-week__heading-conteiner {
   position: absolute;
+  @include size-font(25px, 30px);
+  margin: 0;
+  top: -70px;
+  /*
+  position: absolute;
   @include size-font(53px, 57px);
   margin-top: 61px;
   z-index: 2;
-  width: 545px;
+  width: 545px;*/
 }
 
 .info-product {
+  @include size-font(15px, 24px);
+  color: #444444;
+  width: 260px;
+  height: max-content;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*
   @include size-font(17px, 30px);
   color: #444444;
   width: 292px;
   height: max-content;
   margin-top: 153px;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
 }
 
 .product-week__list-specifications {
+  margin-top: 28px;
+
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 28px;
   width: 291px;
 }
 
 .product-week__item {
+  display: flex;
   padding-top: 5px;
   padding-bottom: 14px;
   border-bottom: 1px solid #ececec;
@@ -57,17 +87,26 @@
 }
 
 .product-week__naming:first-child {
-  width: 97px;
+  min-width: 97px;
   display: inline;
 }
 
 .product-week__price {
+  @include size-font(17px, 24px);
+  font-weight: bold;
+  color: $base-color;
+  width: 100%;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 24px;
+  /*
   @include size-font(20px, 24px);
   font-weight: bold;
   color: $base-color;
   width: 174px;
-  margin: 0 90px 0 auto;
+  margin: 0 90px 0 auto;*/
 }
+
 
 .product-week__btn {
   display: flex;

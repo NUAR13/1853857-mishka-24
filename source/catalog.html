@@ -34,7 +34,7 @@
       </div>
     </nav>
   </header>
-  <main class="main-form">
+  <main class="main-catalog">
     <section class="menu-inner indentation">
       <div class="menu__conteiner">
       <header class="menu__product-info">
@@ -50,7 +50,7 @@
       <ul class="card-product__list">
         <li class="card-product__item">
           <a class="card-product__link-img" href="#">
-            <img class="card-product__img" src="img/hare.jpg" width="316" height="462">
+            <img class="card-product__img" src="img/hare-mobile.jpg" width="260" height="195">
           </a>
           <div class="card-product__wrapper">
             <a class="card-product__link-heading" href="#">
@@ -67,7 +67,7 @@
         </li>
         <li class="card-product__item">
           <a class="card-product__link-img" href="#">
-            <img class="card-product__img" src="img/basket.jpg" width="316" height="462">
+            <img class="card-product__img" src="img/basket-mobile.jpg" width="260" height="195">
           </a>
           <div class="card-product__wrapper">
             <a class="card-product__link-heading" href="#">
@@ -84,7 +84,7 @@
         </li>
         <li class="card-product__item">
           <a class="card-product__link-img" href="#">
-            <img class="card-product__img" src="img/big-basket.jpg" width="316" height="462">
+            <img class="card-product__img" src="img/big-basket-mobile.jpg" width="260" height="195">
           </a>
           <div class="card-product__wrapper">
             <a class="card-product__link-heading" href="#">
@@ -104,7 +104,7 @@
     <section class="production indentation">
       <div class="production__conteiner">
         <div class="production__wrapper">
-          <video class="production__video" width="668" height="455" preload="none" poster="img/video.jpg">
+          <video class="production__video" width="260" height="150" preload="none" poster="img/video-mobile.jpg">
             <source src="video.mp4" type="video/mp4">
             <source src="video.ogv" type="video/ogg">
             <source src="video.webm" type="video/webm">
@@ -119,6 +119,8 @@
         </div>
         <div class="production__conteiner-info">
           <h2 class="production__heading">Процесс производства</h2>
+        </div>
+        <div class="production__wrapper-info">
           <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production-button" href="#">Сделать заказ</a>
         </div>
@@ -153,20 +155,24 @@
     </div>
   </footer>
   <div class="modal-conteiner">
-    <h2 class="modal-conteiner__heading">Добавить в корзину</h2>
-    <p class="modal-conteiner__size-selection">Выберите размер:</p>
-    <ol class="modal-conteiner__list-size">
-      <li class="modal-conteiner__item">
-        <button class="modal-conteiner__button-size" type="button">S</button>
-      </li>
-      <li class="modal-conteiner__item">
-        <button class="modal-conteiner__button-size" type="button">M</button>
-      </li>
-      <li class="modal-conteiner__item">
-        <button class="modal-conteiner__button-size" type="button">L</button>
-      </li>
-    </ol>
-    <button class="button" type="button">Добавить</button>
+    <div class="modal-conteiner__auth">
+      <section class="modal-conteiner__content">
+         <h2 class="modal-conteiner__heading">Добавить в корзину</h2>
+         <p class="modal-conteiner__size-selection">Выберите размер:</p>
+         <ol class="modal-conteiner__list-size">
+           <li class="modal-conteiner__item">
+             <button class="modal-conteiner__button-size modal-conteiner__button-size--current" type="button">S</button>
+           </li>
+           <li class="modal-conteiner__item">
+             <button class="modal-conteiner__button-size" type="button">M</button>
+           </li>
+           <li class="modal-conteiner__item">
+             <button class="modal-conteiner__button-size" type="button">L</button>
+           </li>
+          </ol>
+        <button class="modal-conteiner__button" type="button">Добавить</button>
+      </section>
+    </div>
   </div>
 </body>
 </html>

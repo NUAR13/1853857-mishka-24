@@ -33,34 +33,27 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
-
   display: flex;
   flex-direction: column;
-
-  width: 1150px;
+  width: 320px;
   min-height: 100%;
   margin: 0 auto;
-
   color: #000000;
   background-color: #ffffff;
+  //*width:1150px;*//
 }
 
 
 .visually-hidden {
   position: absolute;
-
   overflow: hidden;
   clip: rect(0 0 0 0);
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   white-space: nowrap;
-
   border: 0;
-
   clip-path: inset(100%);
 }
 
@@ -69,8 +62,12 @@ img {
 }
 
 .indentation {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+/*
+    padding-left: 50px;
+    padding-right: 50px;
+*/
 }
 
 .indentation-form {

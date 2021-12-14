@@ -1,12 +1,17 @@
 .card-product {
+  padding-top: 30px;
+  /*
   padding-top: 111px;
-  padding-bottom: 57px;
+  padding-bottom: 57px;*/
 }
 
 .card-product__list {
+  display: flex;
+  flex-wrap: wrap;
+  /*
   display: grid;
   grid-template-columns: repeat(3, 316px);
-  gap: 51px;
+  gap: 51px;*/
   padding: 0;
   list-style: none;
   margin: 0;
@@ -14,7 +19,10 @@
 
 .card-product__item {
   outline: 1px solid #ececec;
-  min-height: 659px;
+  min-height: 374px;
+  margin-bottom: 30px;
+  /*
+  min-height: 659px;*/
 }
 
 .card-product__wrapper {
@@ -29,14 +37,18 @@
 }
 
 .card-product__heading {
-  @include size-font(20px, 24px);
+  @include size-font(17px, 24px);
+  /*
+  @include size-font(20px, 24px);*/
   color: #000000;
   margin-top: 0;
   margin-bottom: 6px;
 }
 
 .card-product__options {
-  @include size-font(15px, 30px);
+  @include size-font(13px, 30px);
+  /*
+  @include size-font(15px, 30px);*/
   color: $base-color;
   margin: 0;
 }
@@ -45,12 +57,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 23px;
+  margin-bottom: 26px;
   padding-left: 27px;
   padding-right: 20px;
 }
 
 .card-product__price {
-  @include size-font(15px, 30px);
+  @include size-font(15px, 24px);
+  /*
+  @include size-font(15px, 30px);*/
   font-weight: bold;
   color: $base-color;
   margin: 0;
