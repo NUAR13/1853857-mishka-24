@@ -42,7 +42,7 @@
   border-top: 1px solid #62d1ba;
 }
 
-.list-type {
+.form__list-type {
   /*
   margin-top: 60px;*/
   margin-top: 25px;
@@ -123,16 +123,17 @@
   background-image: url("../img/tick.svg");
 }
 
-.list-color {
+.form__list-color {
   display: flex;
   flex-wrap: wrap;
   margin-left: 12px;
   margin-top: 25px;
+  margin-bottom: 26px;
   /*
   padding-left: 60px;*/
 }
 
-.type-product {
+.form__type-product {
   padding-bottom: 49px;
 }
 
@@ -187,7 +188,7 @@
   background-color: #f1f1f1;
 }*/
 
-.title-contact {
+.form__title-contact {
   display: flex;
   margin: 0;
   align-items: center;
@@ -213,7 +214,7 @@
   margin: 0;
   border: none;
 
- .form__item-title {
+  .form__item-title {
     margin-top: 10px;
     margin-bottom: 22px;
   }
