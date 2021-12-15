@@ -1,1 +1,16 @@
-// Начните писать стили здесь
+@import "./global/global.scss";
+@import "./global/variables.scss";
+
+//block
+@import "./block/navigation.scss";
+@import "./block/menu.scss";
+@import "./block/product-week.scss";
+@import "./block/info.scss";
+@import "./block/reviews.scss";
+@import "./block/contacts.scss";
+@import "./block/footer-page.scss";
+@import "./block/modal-conteiner.scss";
+@import "./block/menu-inner.scss";
+@import "./block/form.scss";
+@import "./block/card-product.scss";
+@import "./block/production.scss";

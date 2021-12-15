@@ -1,0 +1,113 @@
+.info {
+  padding-top: 31px;
+  /*
+  margin-top: 68px;
+  padding-left: 225px;
+  padding-right: 250px;*/
+}
+
+.info__heading {
+  @include size-font(25px, 30px);
+  margin-bottom: 82px
+  /*
+  @include size-font(53px, 57px);
+  margin-bottom: 95px;*/
+}
+
+.info__list-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  /*
+  display: grid;
+  grid-template-columns: repeat(2, minmax(235px, 325px));
+  gap: 57px 87px;
+  list-style: none;
+  padding: 0;
+  margin: 0;*/
+}
+
+.info__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.info__description {
+  @include size-font(17px, 20px);
+  font-weight: bold;
+  /*
+  @include size-font(20px, 22px);
+  font-weight: bold;*/
+}
+
+.info__flower::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(33px,38px);
+}
+
+.info__clew::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(35px,34px);
+}
+
+.info__bill::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(42px,27px);
+}
+
+.info__rocket::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(55px,23px);
+}
+
+.info__like::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(34px,27px);
+}
+
+.info__present::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-6.svg");
+  background-repeat: no-repeat;
+  top: -38px;
+  display: block;
+
+  @include size-block(33px,32px);
+}

@@ -1,0 +1,16 @@
+.menu-inner {
+  background-color: #f1f1f1;
+  padding: 73px 0 73px;
+  /*
+  padding-bottom: 100px;*/
+}
+
+.menu-inner__heading {
+  @include size-font(27px, 30px);
+  text-align: center;
+  margin: 0;
+  /*
+  @include size-font(53px, 57px);
+  text-align: center;
+  margin-top: 58px;*/
+}

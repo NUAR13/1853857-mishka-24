@@ -1,0 +1,261 @@
+.form {
+  padding-top: 17px;
+  /*
+  margin-top: 100px;*/
+}
+
+.form__conteiner-clue {
+  /*
+  margin-left: 128px;*/
+}
+
+.form__clue {
+  margin: 0;
+
+  @include size-font(13px, 24px);
+  /*
+  @include size-font(17px, 38px);*/
+}
+
+.form__item-title {
+  @include size-font(17px, 16px);
+  color: #63d1bb;
+  text-transform: uppercase;
+  /*
+  margin-top: 68px;*/
+}
+
+.form__filter-item {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__filter-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-top: 42px;
+  list-style: none;
+  margin-bottom: 0;
+  border-top: 1px solid #62d1ba;
+}
+
+.form__list-type {
+  /*
+  margin-top: 60px;*/
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.form__list-item {
+  /*
+  min-width: 250px;*/
+}
+
+.form__list-item:not(:last-child) {
+  margin-bottom: 24px;
+  /*
+  margin-bottom: 59px;*/
+}
+
+.form__filter-label {
+  position: relative;
+
+  @include size-font(19px, 18px);
+  font-weight: bold;
+}
+
+.form__control-label {
+  /*
+  @include size-font(19px, 18px);
+  margin-left: 143px;*/
+  @include size-font(17px, 18px);
+  font-weight: bold;
+}
+
+.form__control-mark {
+  position: absolute;
+  top: -5px;
+  left: -56px;
+  width: 42px;
+  height: 42px;
+  /*
+  top: -14px;
+  left: 60px;
+  width: 52px;
+  height: 52px;*/
+  cursor: pointer;
+  vertical-align: text-top;
+  border: 2px solid #444444;
+  background: #ffffff;
+}
+
+.form__filter-input[type="radio"] + .form__control-mark {
+  border-radius: 50%;
+}
+
+.form__filter-input[type="radio"]:checked + .form__control-mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  content: "";
+  border-radius: 50%;
+  background: #62d1ba;
+}
+
+.form__filter-input[type="checkbox"]:checked + .form__control-mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 32px;
+  height: 22px;
+  content: "";
+  background-image: url("../img/tick.svg");
+}
+
+.form__list-color {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  /*
+  padding-left: 60px;*/
+}
+
+.form__type-product {
+  padding-bottom: 49px;
+}
+
+.form__wrapper {
+  width: 100%;
+  /*padding-bottom: 26px;
+  padding-top: 50px;
+  width: 698px;
+  margin-left: 60px;*/
+}
+
+.form__contacts-item,
+.form__middle-name,
+.form__surname,
+.form__name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form__input {
+  border: none;
+  box-shadow: inset 0 -2px 0 #000000;
+  /*margin-left: 25px;
+  padding: 16px 18px 18px;
+  @include size-font(19px, 18px);*/
+  @include size-font(18px, 20px);
+  width: 100%;
+  padding: 16px 18px 18px 0;
+}
+
+.form__contacts {
+  margin: 0;
+  border: none;
+  padding: 0;
+  /*
+  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 26px;*/
+}
+
+.form__contacts-container {
+  position: relative;
+  width: 100%;
+  /*
+  width: 700px;*/
+  display: flex;
+  margin-left: auto;
+}
+/*
+.form__contacts-container > input {
+  background-color: #f1f1f1;
+}*/
+
+.form__title-contact {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.form__decoration-email,
+.form__decoration-phone {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.form__fill-field,
+.form__additionally {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 17px;
+  /*
+  padding-bottom: 49px;*/
+  margin: 0;
+  border: none;
+
+  .form__item-title {
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+}
+
+.form__additionally-field {
+  display: inline-block;
+  /*width: 700px;
+  margin-top: 50px;
+  margin-left: 59px;*/
+  width: 100%;
+  min-height: 128px;
+  padding: 17px;
+
+  @include size-font(19px, 18px);
+}
+
+.button-submit-form {
+  width: 100%;
+
+  @include size-font(17px, 16px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $base-color;
+  background-color: #ffffff;
+  padding: 18px 17px;
+  margin-bottom: 38px;
+  order: 2;
+  /*
+  margin-left: 95px;*/
+}
+
+.form__field-text {
+  @include size-font(14px, 16px);
+  color: $base-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+  /*
+  @include size-font(17px, 30px);
+  color: $base-color;
+  margin-left: auto;*/
+}
