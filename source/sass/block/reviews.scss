@@ -16,18 +16,6 @@
   margin-bottom: 35px;*/
 }
 
-.reviews__slider {
-  /*
-  background-image: url("../img/review-bg.png");
-  background-repeat: no-repeat;
-  padding-top: 78px;*/
-}
-
-.reviews__slider-item {
-  /*
-  margin-left: 174px;*/
-}
-
 .reviews__visitor {
   @include size-font(15px, 30px);
   color: $base-color;
@@ -92,9 +80,4 @@
 
 .reviews__next-icon {
   transform: rotate(180deg);
-}
-
-.reviews__pref-icon {
-  /*
-  transform: translateX(-37px);*/
 }
