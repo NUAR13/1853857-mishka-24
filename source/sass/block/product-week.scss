@@ -38,6 +38,7 @@
 
 .product-week__heading-conteiner {
   position: absolute;
+
   @include size-font(25px, 30px);
   margin: 0;
   top: -70px;
@@ -110,6 +111,7 @@
 
 .product-week__btn {
   display: flex;
+
   @include size-font(17px, 20px);
   font-weight: bold;
   justify-content: center;
@@ -117,6 +119,7 @@
   color: $base-color;
   text-decoration: none;
   text-transform: uppercase;
+
   @include size-block(260px,52px);
   margin: 0 auto;
   border: 2px solid #444444;

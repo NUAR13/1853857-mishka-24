@@ -11,6 +11,7 @@
 
 .form__clue {
   margin: 0;
+
   @include size-font(13px, 24px);
   /*
   @include size-font(17px, 38px);*/
@@ -63,6 +64,7 @@
 
 .form__filter-label {
   position: relative;
+
   @include size-font(19px, 18px);
   font-weight: bold;
 }
@@ -228,11 +230,13 @@
   width: 100%;
   min-height: 128px;
   padding: 17px;
+
   @include size-font(19px, 18px);
 }
 
 .button-submit-form {
   width: 100%;
+
   @include size-font(17px, 16px);
   font-weight: bold;
   text-transform: uppercase;

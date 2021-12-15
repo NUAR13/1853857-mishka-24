@@ -58,6 +58,7 @@
 
 .modal-conteiner__button-size {
   display: flex;
+
   @include size-font(17px, 16px);
   font-weight: bold;
   justify-content: center;
@@ -72,6 +73,7 @@
   min-height: 52px;
   border: 2px solid rgba(68, 68, 68, 0.1);
   margin-top: 4px;
+
   &--current {
     border: 2px solid #63d1bb;
   }
@@ -79,6 +81,7 @@
 
 .modal-conteiner__button {
   display: flex;
+
   @include size-font(17px, 16px);
   font-weight: bold;
   justify-content: center;

@@ -36,6 +36,7 @@
 .contacts__item {
   display: flex;
   justify-content: space-around;
+
   & a {
     text-decoration: none;
   }
@@ -64,6 +65,7 @@
 
 .contacts-map-link {
   display: flex;
+
   @include size-font(17px, 20px);
   font-weight: bold;
   justify-content: center;

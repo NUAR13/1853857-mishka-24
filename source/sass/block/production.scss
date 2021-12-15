@@ -9,6 +9,7 @@
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+
   @include size-font (20px, 24px);
   max-width: 172px;
 }
@@ -42,6 +43,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   @include size-font(18px, 16px);
   /*
   @include size-font(17px, 16px);*/

@@ -43,6 +43,7 @@
 
 .menu__main-heading {
   text-align: center;
+
   @include size-font(27px,30px);
   margin-top: 0;
   margin-bottom: 120px;
@@ -87,7 +88,8 @@
   text-decoration: none;
   color: #ffffff;
   width: 130px;
-  @include size-font(19px,24px);
+
+  @include size-font (19px,24px);
   font-weight: bold;
   margin-right: auto;
 
