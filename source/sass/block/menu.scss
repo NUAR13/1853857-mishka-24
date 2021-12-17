@@ -1,5 +1,9 @@
 .menu {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 600px;
+  }
   /*
   background-image: url("../img/hero-desktop.jpg");
   background-repeat: no-repeat;
@@ -11,6 +15,10 @@
   background-repeat: no-repeat;
   padding-top: 78px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 0 50px;
+  }
+
   /*
   background-image: url("../img/hero-desktop.jpg");
   background-repeat: no-repeat;
@@ -19,27 +27,37 @@
 
 .menu__conteiner {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
-/*
+
 .menu__product-info {
-  display: flex;
-  padding-top: 20px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+  }
 }
 
 .menu__link {
-  text-decoration: none;
-  color: #000000;
-  padding-right: 50px;
-  @include size-font(15px,24px);
-  font-weight: 700;
+  @media (min-width: $tablet-width) {
+    text-decoration: none;
+    color: #000000;
+    padding-right: 50px;
 
-  &--delivery {
-    font-weight: 400;
-    margin-left: auto;
-    color: $base-color;
-    padding-right: 0;
+    @include size-font(15px,24px);
+    font-weight: 700;
+
+    &--delivery {
+      font-weight: 400;
+      margin-left: auto;
+      color: $base-color;
+      padding-right: 0;
+    }
   }
-}*/
+}
 
 .menu__main-heading {
   text-align: center;
@@ -49,6 +67,12 @@
   margin-bottom: 120px;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include size-font(43px,50px);
+    margin-top: 109px;
+    margin-bottom: 372px;
+  }
   /*
   text-align: center;
   @include size-font(53px,57px);
@@ -73,6 +97,10 @@
   padding-bottom: 18px;
   padding-left: 36px;
 
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 25px 36px 34px 36px;
+  }
   /*
   display: flex;
   min-width: 525px;
@@ -93,6 +121,9 @@
   font-weight: bold;
   margin-right: auto;
 
+  @media (min-width: $tablet-width) {
+    @include size-font(20px,30px);
+  }
   /*
   display: block;
   text-decoration: none;

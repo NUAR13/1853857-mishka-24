@@ -1,6 +1,15 @@
 .navigation {
   position: relative;
   min-height: 79px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+    min-height: 89px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
 }
 
 .navigation__wrapper {
@@ -15,10 +24,24 @@
   border: 1px solid #e6e6e6;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  /*
-  display:flex;
-  padding-left: 18px;
-  padding-right: 20px; */
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    width: 345px;
+    border: none;
+    box-shadow: none;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .navigation__wrapper-popover {
@@ -31,8 +54,10 @@
   right: 30px;
   width: 20px;
   height: 20px;
-  /*
-  display: none;*/
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
@@ -42,10 +67,9 @@
   padding: 0;
   margin: 0;
 
-  /*display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;*/
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .navigation__list-order-item {
@@ -53,6 +77,15 @@
   flex-wrap: wrap;
   padding: 28px 5px 27px 76px;
   box-shadow: 0 1px 0 #ececee, inset 0 1px 0 #ececec;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    box-shadow: none;
+  }
   /*
   max-width: 234px;
   padding: 32px;*/
@@ -70,15 +103,24 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 0;
+    transform: translateX(50%) translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  }
   /*
   left: 45.62%;
   right: 45.4%;
   top: 0.75%;
   bottom: 98.31%;*/
-}
-
-.page-header__navigation-icon {
-  /*padding-top: 9px;*/
 }
 
 .list-order {
@@ -92,6 +134,9 @@
   padding: 28px 5px 27px 76px;
   box-shadow: 0 1px 0 #ececee, inset 0 1px 0 #ececec;
 
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
   /*
   max-width: 316px;
   padding: 32px;

@@ -1,5 +1,14 @@
 .info {
   padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 50px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
   /*
   margin-top: 68px;
   padding-left: 225px;
@@ -8,9 +17,18 @@
 
 .info__heading {
   @include size-font(25px, 30px);
-  margin-bottom: 82px
+  margin-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    @include size-font(43px,50px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size-font(53px, 57px);
+    grid-column: 2/6;
+    grid-row: 1/2;
+  }
   /*
-  @include size-font(53px, 57px);
   margin-bottom: 95px;*/
 }
 
@@ -19,6 +37,16 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/6;
+    grid-row: 2/3;
+  }
   /*
   display: grid;
   grid-template-columns: repeat(2, minmax(235px, 325px));
@@ -36,11 +64,19 @@
   &:not(:last-child) {
     margin-bottom: 50px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .info__description {
   @include size-font(17px, 20px);
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    @include size-font(20px,22px);
+  }
   /*
   @include size-font(20px, 22px);
   font-weight: bold;*/
