@@ -1,5 +1,7 @@
-@import "./global/global.scss";
+
 @import "./global/variables.scss";
+@import "./global/mixin.scss";
+@import "./global/global.scss";
 
 //block
 @import "./block/navigation.scss";

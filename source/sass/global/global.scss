@@ -35,6 +35,8 @@ body {
   line-height: 24px;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+  max-width: 1150px;
   min-height: 100%;
   margin: 0 auto;
   color: #000000;
@@ -55,19 +57,39 @@ body {
 }
 
 img {
-  display: block;
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 .indentation {
   padding-left: 30px;
   padding-right: 30px;
-  /*
-  padding-left: 50px;
-  padding-right: 50px;
-*/
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .indentation-form {
   padding-left: 97px;
   padding-right: 225px;
+}
+
+.button {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-weight: bold;
+  text-align: center;
+  color: $base-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid #444444;
 }

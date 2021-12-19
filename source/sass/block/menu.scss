@@ -1,43 +1,23 @@
 .menu {
-  padding: 0;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -17px;
+  background-size: contain;
+  padding-top: 73px;
 
   @media (min-width: $tablet-width) {
     min-height: 600px;
-  }
-  /*
-  background-image: url("../img/hero-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-}
-
-.menu__wrapper-img {
-  background-image: url("../img/hero-mobile.jpg");
-  background-repeat: no-repeat;
-  padding-top: 78px;
-
-  @media (min-width: $tablet-width) {
     padding: 0 50px 0 50px;
-  }
-
-  /*
-  background-image: url("../img/hero-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-}
-
-.menu__conteiner {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
 
 .menu__product-info {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 20px;
     width: 100%;
+    padding-top: 20px;
   }
 }
 
@@ -65,32 +45,33 @@
   @include size-font(27px,30px);
   margin-top: 0;
   margin-bottom: 120px;
-  padding-left: 30px;
-  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     @include size-font(43px,50px);
     margin-top: 109px;
     margin-bottom: 372px;
   }
-  /*
-  text-align: center;
-  @include size-font(53px,57px);
-  margin-top: 114px;
-  margin-bottom: 353px;*/
+
+  @media (min-width: $desktop-width) {
+    @include size-font(53px,57px);
+    margin-top: 114px;
+    margin-bottom: 353px;
+  }
 }
 
 .menu__list-product {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .menu__product-item {
   display: flex;
-  min-width: 320px;
   background: #63d1bb;
   padding-top: 24px;
   padding-right: 30px;
@@ -101,14 +82,6 @@
     width: 50%;
     padding: 25px 36px 34px 36px;
   }
-  /*
-  display: flex;
-  min-width: 525px;
-  background: #63d1bb;
-  padding-top: 25px;
-  padding-right: 35px;
-  padding-bottom: 34px;
-  padding-left: 36px;*/
 }
 
 .menu__product-link {
@@ -124,13 +97,6 @@
   @media (min-width: $tablet-width) {
     @include size-font(20px,30px);
   }
-  /*
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  @include size-block(139px, 60px);
-  @include size-font(20px,30px);
-  margin-right: auto;*/
 }
 
 .menu__product-item-bg {

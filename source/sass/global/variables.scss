@@ -2,13 +2,3 @@ $base-color: #444444;
 
 $tablet-width: 768px;
 $desktop-width: 1150px;
-
-@mixin size-font ($font:17px, $line:25px) {
-  font-size: $font;
-  line-height: $line;
-}
-
-@mixin size-block ($width:17px, $height:25px) {
-  width: $width;
-  height: $height;
-}
