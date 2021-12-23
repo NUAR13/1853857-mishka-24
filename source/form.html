@@ -10,7 +10,7 @@
 <body class="body">
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation__logo">
+      <a class="navigation__logo" href="index.html">
         <svg class="page-header__navigation-icon" width="86" height="35" viewBox="0 0 86 35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.54732 26.3186C4.54732 22.8186 4.24733 19.4186 4.14733 15.9186C4.14733 15.6186 4.14733 15.2186 4.14733 14.9186C4.14733 15.0186 4.24732 15.1186 4.24732 15.3186C4.74732 16.7186 5.34732 18.0186 6.04732 19.2186C6.74732 20.4186 7.14732 21.8186 7.54732 23.1186C7.34732 23.3186 7.24733 23.5186 7.34733 23.7186C7.34733 23.9186 7.44732 23.9186 7.54732 24.0186C8.04732 24.5186 9.04733 24.2186 9.64733 24.0186C9.84733 23.9186 10.1473 23.8186 10.3473 23.6186C10.6473 23.4186 11.0473 23.0186 10.9473 22.6186C10.9473 22.5186 10.9473 22.4186 10.8473 22.4186C11.2473 21.3186 11.4473 20.2186 11.6473 19.1186C11.8473 17.9186 12.3473 16.8186 12.7473 15.6186C12.7473 16.1186 12.8473 16.6186 12.8473 17.2186C13.0473 19.3186 12.8473 21.5186 12.8473 23.6186C12.8473 24.3186 12.8473 25.0186 13.0473 25.7186C13.1473 26.0186 13.3473 27.2186 13.2473 27.3186C12.7473 27.8186 12.8473 28.4186 13.5473 28.5186C14.3473 28.7186 15.3473 28.4186 15.8473 27.9186C16.8473 27.0186 16.3473 25.5186 16.1473 24.3186C15.7473 22.3186 16.2473 20.1186 16.1473 18.1186C16.0473 15.8186 15.7473 13.6186 15.7473 11.3186C15.7473 9.51856 16.0473 7.61856 15.4473 5.81856C15.4473 5.61856 15.5473 5.41856 15.5473 5.21856C15.7473 4.31856 12.7473 4.81856 12.3473 5.61856C12.0473 5.81856 11.9473 6.11856 12.0473 6.41856C12.0473 6.51856 12.1473 6.51856 12.1473 6.61856C11.5473 9.31856 10.8473 11.9186 9.94733 14.5186C9.64733 15.5186 9.24733 16.5186 8.84733 17.5186C8.34733 16.6186 7.84733 15.6186 7.44733 14.7186C6.24733 11.8186 5.24733 8.91856 3.84733 6.11856C4.04733 4.81856 1.14732 4.91856 0.547324 6.11856C-0.152676 7.51856 -0.0526737 9.01856 0.147326 10.5186C0.447326 12.2186 0.447326 13.9186 0.447326 15.6186C0.447326 18.9186 0.747327 22.3186 0.847327 25.6186C0.547327 25.9186 0.447325 26.3186 0.747325 26.8186C0.847325 27.0186 1.04732 27.1186 1.24732 27.3186C2.44732 28.0186 4.54732 27.5186 4.54732 26.3186Z" fill="black"/>
           <path d="M22.7473 7.91856C22.6473 7.31856 19.3473 8.01856 19.4473 8.81856C19.7473 10.6186 19.6473 12.4186 19.5473 14.2186C19.5473 15.9186 19.9473 17.5186 20.1473 19.2186C20.3473 20.9186 20.0473 22.7186 20.2473 24.4186C20.3473 25.2186 20.8473 26.7186 20.3473 27.4186C19.9473 27.8186 21.5473 27.7186 21.6473 27.7186C22.2473 27.6186 23.1473 27.4186 23.5473 26.8186C24.1473 26.1186 23.7473 24.8186 23.5473 24.0186C23.2473 22.3186 23.4473 20.5186 23.3473 18.7186C23.2473 17.0186 22.7473 15.4186 22.6473 13.8186C22.9473 11.8186 23.0473 9.91856 22.7473 7.91856Z" fill="black"/>
@@ -25,22 +25,26 @@
       <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
       <div class="navigation__wrapper">
         <ul class="navigation__list navigation__list-order">
-          <li class="navigation__list-order-item">
+          <li class="navigation__item navigation__list-order-item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="navigation__list-order-item">
+          <li class="navigation__item navigation__list-order-item">
             <a href="form.html">Вязание на заказ</a>
           </li>
         </ul>
 
         <ul class="navigation__list navigation__list-search">
-          <li class="navigation__list-search-item">
-            <a href="#" aria-label="Поиск">
-            <svg class="navigation__search-icon" width="18" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path opacity=".2" d="m17.7 16-3.5-3.4A7.8 7.8 0 0 0 8 0 7.8 7.8 0 0 0 0 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8ZM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6Z" fill="#000"/></svg>Поиск по сайту</a>
+          <li class="navigation__item navigation__list-search-item">
+            <a href="#" class="navigation__link-search" aria-label="Поиск">
+            <svg class="navigation__icon navigation__search-icon" width="18" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path opacity=".2" d="m17.7 16-3.5-3.4A7.8 7.8 0 0 0 8 0 7.8 7.8 0 0 0 0 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8ZM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6Z" fill="#000"/></svg>
+              <span class="navigation__search">Поиск по сайту</span>
+            </a>
           </li>
-          <li class="navigation__list-search-item">
-            <a href="#" aria-label="Корзина">
-            <svg class="navigation__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>Корзина: пока пуста</a>
+          <li class="navigation__item navigation__list-basket-item">
+            <a href="#" class="navigation__link-basket" aria-label="Корзина">
+            <svg class="navigation__icon navigation__basket-icon" width="21" height="18" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21"><path opacity=".2" d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 0 0-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7Zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4Zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7Z" fill="#000"/></svg>
+              <span>Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -48,33 +52,33 @@
   </header>
   <main class="main-form">
     <section class="menu-inner indentation">
-      <div class="menu__conteiner">
-      <header class="menu__product-info">
-        <a class="menu__link menu__link--new" href="#">Новые поступления</a>
-        <a class="menu__link menu__link--scale" href="#">Распродажа</a>
+      <div class="menu__product-info">
+        <div class="menu__product-desktop">
+          <a class="menu__link menu__link--new" href="#">Новые поступления</a>
+          <a class="menu__link menu__link--scale" href="#">Распродажа</a>
+        </div>
         <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
-      </header>
       </div>
       <h1 class="menu-inner__heading">Вязание на заказ</h1>
     </section>
-    <section class="form indentation">
+    <section class="form">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <div class="form__conteiner-clue">
+      <div class="form__conteiner-clue indentation">
         <p class="form__clue">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form__filter-item form__type-product">
+        <fieldset class="form__filter-item form__type-product indentation">
           <h3 class="form__item-title">Тип</h3>
           <ul class="form__filter-list form__list-type">
             <li class="form__list-item">
-              <label class="form__filter-label" for="accessory">
+              <label class="form__filter-label form__filter-label--type" for="accessory">
                 <input class="form__filter-input visually-hidden" type="radio" name="type-product" checked value="accessory" id="accessory">
                 <span class="form__control-mark"></span>
                 <span class="form__control-label">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="toy">
+              <label class="form__filter-label form__filter-label--type" for="toy">
                 <input class="form__filter-input visually-hidden" type="radio" name="type-product" value="toy" id="toy">
                 <span class="form__control-mark"></span>
                 <span class="form__control-label">Детская игрушка</span>
@@ -82,46 +86,46 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__filter-item">
+        <fieldset class="form__filter-item indentation">
           <h3 class="form__item-title">Цвет</h3>
           <ul class="form__filter-list form__list-color">
             <li class="form__list-item">
-              <label class="form__filter-label" for="white">
+              <label class="form__filter-label form__filter-label--collor" for="white">
               <input class="form__filter-input visually-hidden" type="checkbox" checked name="white" id="white">
               <span class="form__control-mark"></span>
               <span class="form__control-label">Белый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="gray">
+              <label class="form__filter-label form__filter-label--collor" for="gray">
               <input class="form__filter-input visually-hidden" type="checkbox" checked name="gray" id="gray">
               <span class="form__control-mark"></span>
               <span class="form__control-label">Серый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="tiffany">
+              <label class="form__filter-label form__filter-label--collor" for="tiffany">
               <input class="form__filter-input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
               <span class="form__control-mark"></span>
               <span class="form__control-label">«Тиффани»</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="black">
+              <label class="form__filter-label form__filter-label--collor" for="black">
               <input class="form__filter-input visually-hidden" type="checkbox" name="black" id="black">
               <span class="form__control-mark"></span>
               <span class="form__control-label">Черный</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="pink">
+              <label class="form__filter-label form__filter-label--collor" for="pink">
               <input class="form__filter-input visually-hidden" type="checkbox" name="pink" id="pink">
               <span class="form__control-mark"></span>
               <span class="form__control-label">Розовый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__filter-label" for="orange">
+              <label class="form__filter-label form__filter-label--collor" for="orange">
               <input class="form__filter-input visually-hidden" type="checkbox" name="orange" id="orange">
               <span class="form__control-mark"></span>
               <span class="form__control-label">Оранжевый</span>
@@ -129,7 +133,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__filter-item">
+        <fieldset class="form__filter-item indentation">
           <h3 class="form__item-title">ФИО</h3>
           <div class="form__wrapper">
             <div class="form__name">
@@ -146,7 +150,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__contacts">
+        <fieldset class="form__contacts indentation">
           <legend class="visually-hidden">Контакты клиента</legend>
           <div class="form__contacts-item">
             <label class="form__item-title form__title-contact" for="phone">Тел:</label>
@@ -175,22 +179,22 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__additionally">
+        <fieldset class="form__additionally indentation">
           <h3 class="form__item-title">Доп</h3>
           <textarea class="form__additionally-field" name="additionally-field" id="additionally" placeholder="Опишите все ваши пожелания к заказу" cols="15"></textarea>
         </fieldset>
-        <fieldset class="form__fill-field">
-          <button class="button-submit-form" type="submit">Отправить заказ</button>
+        <div class="form__fill-field indentation">
+          <button class=" button button-submit-form" type="submit">Отправить заказ</button>
           <p class="form__field-text">*Поля обязательны для заполнения</p>
-        </fieldset>
+        </div>
       </form>
     </section>
 
   </main>
   <footer class="footer-page indentation">
-    <div class="footer-page__logo">
+    <a class="footer-page__logo">
       <svg class="footer-page__logo-icon" width="102" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 35"><path d="M19.2 21.5c0-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.5l.1-.7c.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1l.1.3c-.7 3.2-1.6 6.3-2.6 9.4L10.4 21c-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.2.2-1.5-3.2-1.4-3.9 0a8.4 8.4 0 0 0-.4 5.2c.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.9-.4.4-.5.9 0 1.4l.5.5c1 .7 3.6.1 3.6-1.3 0-4.1-.3-8.2-.4-12.4v-1.2l.2.4c.6 1.6 1.3 3.2 2.2 4.7 1 1.5 1.3 3.1 1.8 4.7-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0l.8-.4c.3-.2 1-.7.7-1.2v-.3l1-3.9a28 28 0 0 1 1.2-4.1l.2 1.9c.2 2.6 0 5.1 0 7.6l.2 2.5c.1.3.4 1.8.3 1.9-.8.5-.6 1.1.2 1.3 1 .2 2.1-.1 2.8-.7 1.2-1.1.6-2.8.4-4.2-.5-2.4 0-5 0-7.4ZM27.6 22.2c0-2-.8-3.9-.8-5.9 0-2.3.2-4.6-.2-6.9 0-.7-4 .1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2.1 0 4.2.1 6.2.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2 0-4.2-.2-6.2ZM44 18.9c-2.2-2.8-6-.8-8.7-1.5C34 17 34 15.1 34 14c0-1.4 0-2.7-.3-4.1 0-1.1 0-2.1.7-2.9l.8-.3 1.1-.1c1.5-.1 4.6.2 4 2.5-.3 1 3.6.4 4-.6 1.1-4.6-7.4-3.7-9.8-3.1-2.2.6-4.6 1.8-4.8 4.4l.3 3.6c.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.3 1.2 3.4.2 4.5-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8 0-5.4-.2-.9-4.2-.1-4 1 .3 2.6-1.4 6.1 2.4 6.6 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3.1 1-6.5-1-9ZM61.3 18.7c0-3.8-.7-7.5-.7-11.3 0-2-4-1.3-4 .3 0 3.6.5 7.2.7 10.8v.2l-5.9.2c.2-4.6-.6-9.2-.4-13.9 0-.6-3.9-.1-3.9 1-.2 4.5.6 8.9.5 13.4l-.3 6.4.3 3.3c.1 1 .5 2.3.2 3.3-.2.8 3.6.3 4-.7.4-1.8-.3-4-.5-5.8-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0l.3 4.1.2 3.5c0 1 .1 2.5-.2 3.5-.8 2.1 3.1 1.9 3.7.4.7-1.9.5-4.2.4-6.2-.2-2.5-.6-4.9-.6-7.3ZM78.2 23.1c-.9-2.8-2.4-5.2-3.6-7.8l3-5.9c.7-1.8 1.3-3.8 3-5.1.6-.4.6-.9-.3-1-.9-.1-2 .2-2.8.7a12.2 12.2 0 0 0-3 4.4l-3 6.1c0 .1 0 .3-.2.4-.5.3-.8.8-.6 1.3l-2.5 4.6c-.3-5.5-1-11.1-1.2-16.6 0-1.3-4-.5-3.9 1 .2 6.9 1.2 13.7 1.3 20.6v.1c-.3.3-.2.5.1.6 0 1.8 0 3.5-.2 5.3-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2.1.3-4.2.2-6.3 1.6-1.7 3-3.6 4.1-5.6.8 1.5 1.5 3 2 4.6 1 2.7 2.3 5.3 3.1 8 .5 1.8 4.5.7 4-1-1-2.8-2.5-5.3-3.4-8.1ZM101.7 18.5c-.2-.8-1.4-.8-2.3-.8v-1c0-2.7-.2-5.4-.4-8-.2-2.5-1.6-3.3-4-3.2-2.4.1-5.2.5-7.5 1.4a7 7 0 0 0-4.6 5.7c-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.5 0 .6 4 0 4-1V23l-.2-2.4c1.4-.6 3.7 0 5.1.1 1.1.1 2.2-.2 3.2-.3l.2 6.9c0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8-.1 1.8-.4 2.3-1 1-1.1.5-3.8.4-5.1v-5.7c1-.2 2.3-.9 2.1-1.8Zm-14.6-.1-.3-3.7c-.2-2.3.1-5.6 2.3-7 .6-.4 1.7-.3 2.4-.4 1-.2 2-.4 2.8.2 1.2.8 1 3.7 1 4.9l.2 6-1.7.1c-2.3-.2-4.6-.6-6.7-.1ZM24.2 6.7c.5-.1 1-.2 1.5-.5L26 6c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5l.1 3v.4c-.2.2 0 .4 0 .6v.4l.4.5a3 3 0 0 0 1.5.3Z" fill="#000"/></svg>
-    </div>
+    </a>
     <ul class="footer-page__social-list">
       <li class="footer-page__item">
         <a class="footer-page__link" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="YouTube">
@@ -214,5 +218,6 @@
       <svg class="footer-page__htmlacademy-icon" width="28" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 35"><path d="M14 0h-.1L.4 1.4v24.7l13.5 8 13.4-8V1.4L14 0Zm11.4 12.1L13.9 5.3h-.1l-.1-.2v.1l-11.4 7v-9l11.5-1.3 11.6 1.2v9ZM13.8 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-1 .5-5-3v1.4l3.9 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8ZM2.3 15.1 13.7 22v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.5 7L2.3 25v-9.9Z" fill="#63D1BB"/></svg></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
