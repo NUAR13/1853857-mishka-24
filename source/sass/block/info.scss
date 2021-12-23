@@ -2,6 +2,8 @@
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 60px;
   }
@@ -17,6 +19,7 @@
 
   @media (min-width: $tablet-width) {
     @include size-font(43px,50px);
+    flex-basis: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,16 +36,21 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-
     grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     row-gap: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/6;
+    grid-column: 2/4;
     grid-row: 2/3;
+  }
+
+  &--second {
+    @media (min-width: $desktop-width) {
+      grid-column: 4/6;
+      grid-row: 2/3;
+    }
   }
 }
 
