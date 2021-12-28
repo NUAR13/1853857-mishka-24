@@ -42,6 +42,14 @@
     display: flex;
     flex-direction: column;
   }
+
+  &:hover .card-product__container {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .card-product__container {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card-product__link-img {
@@ -89,6 +97,14 @@
 
 .card-product__link-heading {
   text-decoration: none;
+
+  &:hover .card-product__heading {
+    opacity: 0.6;
+  }
+
+  &:active .card-product__heading {
+    opacity: 0.3;
+  }
 }
 
 .card-product__heading {
@@ -143,6 +159,15 @@
   position: relative;
   border: none;
   background-color: #ffffff;
+
+  &:hover .card-product__basket-icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active .card-product__basket-icon {
+    opacity: 0.3;
+  }
 }
 
 .card-product__basket-icon {
@@ -152,4 +177,5 @@
   right: 0;
   bottom: 0;
   margin: auto;
+  opacity: 0.2;
 }

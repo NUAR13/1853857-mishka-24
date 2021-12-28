@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f1f1f1;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -17,6 +18,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  &:hover .footer-page__logo-icon {
+    fill: #46c1ae;
+  }
+
+  &:active .footer-page__logo-icon {
+    opacity: 0.3;
   }
 }
 
@@ -49,17 +58,32 @@
   @include size-block(30px, 30px);
   position: relative;
   display: block;
+
+  &:hover .footer-page__link-icon {
+    fill: #46c1ae;
+  }
+
+  &:active .footer-page__link-icon {
+    opacity: 0.3;
+  }
 }
 
-.footer-page__insta-icon,
-.footer-page__facebook-icon,
-.footer-page__twitter-icon {
+.footer-page__link-icon {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #231f20;
+
+  @media (min-width: $tablet-width) {
+    fill: #000000;
+  }
+
+  &--htmlacademy {
+    fill: #63d1bb;
+  }
 }
 
 .footer-page__conteiner {

@@ -39,12 +39,29 @@
 
 .form__item-title {
   @include size-font(17px, 16px);
+  position: relative;
   color: #63d1bb;
   text-transform: uppercase;
+  font-weight: bold;
   margin: 0;
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 74%;
+    background: #62d1ba;
+    position: absolute;
+    top: 50%;
+    left: 75px;
+  }
 
   @media (min-width: $tablet-width) {
     flex-basis: 25%;
+
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -101,14 +118,6 @@
     flex-basis: 33%;
   }
 }
-/*
-.form__list-item:not(:last-child) {
-  margin-bottom: 24px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
-  }
-}*/
 
 .form__filter-label {
   @include size-font(17px, 18px);
@@ -165,8 +174,15 @@
   background: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: 52px;
-    height: 52px;
+    @include size-block(52px, 52px);
+  }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -181,11 +197,15 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   content: "";
   border-radius: 50%;
   background: #62d1ba;
+
+  @media (min-width: $tablet-width) {
+    @include size-block(22px, 22px);
+  }
 }
 
 .form__filter-input[type="checkbox"]:checked + .form__control-mark::before {
@@ -253,14 +273,25 @@
 
 .form__input {
   border: none;
-  box-shadow: inset 0 -2px 0 #000000;
+  outline: none;
+  border-bottom: 2px solid #000000;
 
   @include size-font(17px, 18px);
   width: 100%;
   padding: 16px 18px 18px 0;
+  color: $base-color;
 
   @media (min-width: $tablet-width) {
     @include size-font(19px, 18px);
+    padding-left: 18px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border-bottom: 2px solid #62d1ba;
   }
 }
 
@@ -293,7 +324,17 @@
 .form__contacts-container > input {
   @media (min-width: $tablet-width) {
     background-color: #f1f1f1;
+    padding-left: 17px;
   }
+}
+
+.form__decoration-icon {
+  opacity: 0.2;
+}
+
+.form__input:hover + span > .form__decoration-icon {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .form__title-contact {
@@ -319,8 +360,6 @@
   flex-wrap: wrap;
   padding-top: 0;
   padding-bottom: 17px;
-  /*
-  padding-bottom: 49px;*/
   margin: 0;
   border: none;
 
@@ -353,6 +392,7 @@
   width: 100%;
   min-height: 128px;
   padding: 17px;
+  border: 2px solid #444444;
 
   @include size-font(19px, 18px);
 
@@ -362,6 +402,14 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 66%;
+  }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
   }
 }
 

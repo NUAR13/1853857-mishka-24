@@ -7,9 +7,20 @@
     display: grid;
     align-items: end;
     padding-top: 9px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
     column-gap: 42px;
     grid-template-columns: 292px 1fr;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/zigzag-line-tablet.svg");
+      background-repeat: repeat-x;
+      height: 17px;
+      width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +28,18 @@
     grid-template-columns: 117px 292px 3fr;
     column-gap: 58px;
     padding-top: 54px;
+    padding-bottom: 96px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      background-repeat: repeat-x;
+      height: 24px;
+      width: 100%;
+    }
   }
 }
 
