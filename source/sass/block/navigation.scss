@@ -3,7 +3,7 @@
   min-height: 79px;
 
   @media (min-width: $tablet-width) {
-    min-height: 89px;
+    min-height: 87px;
   }
 }
 
@@ -147,7 +147,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     box-shadow: none;
-    padding-top: 33px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,10 +164,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 33px 35px 13px;
+    padding: 31px 36px 12px;
 
     &:first-child {
       padding-left: 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -222,12 +223,14 @@
   padding-left: 31px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 22px 23px;
+    padding: 23px 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
 .navigation__list-basket-item {
-  padding-left: 31px;
+  padding-left: 32px;
 }
 
 .navigation__logo {

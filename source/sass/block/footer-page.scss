@@ -3,17 +3,18 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f1f1f1;
-  padding-top: 25px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding-top: 51px;
-    padding-bottom: 30px;
+    padding-bottom: 38px;
   }
 }
 
 .footer-page__logo {
   @include size-block(102px, 35px);
+  cursor: pointer;
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -36,26 +37,26 @@
   max-width: 500px;
   list-style: none;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   padding-left: 0;
   margin: 0;
   border-bottom: 1px solid #e5e5e5;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
     width: 300px;
     border: none;
+    padding-bottom: 20px;
   }
 }
 
 
 .footer-page__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 .footer-page__link {
-  @include size-block(30px, 30px);
+  @include size-block(30px, 35px);
   position: relative;
   display: block;
 
@@ -88,7 +89,7 @@
 
 .footer-page__conteiner {
   margin-top: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
 
@@ -100,8 +101,8 @@
 .footer-page__about {
   @include size-font(19px, 18px);
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 7px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 28px;
+  margin-right: 26px;
 }

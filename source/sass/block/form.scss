@@ -2,7 +2,7 @@
   padding-top: 17px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
+    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,9 +11,13 @@
 }
 
 .form__conteiner-clue {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 802px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
 }
 
@@ -23,7 +27,7 @@
   @include size-font(13px, 24px);
 
   @media (min-width: $tablet-width) {
-    @include size-font(17px, 38px);
+    @include size-font(17px, 30px);
   }
 }
 
@@ -33,9 +37,9 @@
   }
 }
 
-.form__filter fieldset:nth-child(2) {
-  padding-bottom: 27px;
-}
+//.form__filter fieldset:nth-child(2) {
+// padding-bottom: 27px;
+//}
 
 .form__item-title {
   @include size-font(17px, 16px);
@@ -45,20 +49,21 @@
   font-weight: bold;
   margin: 0;
 
-  &::before {
+  &::after {
     content: "";
     height: 1px;
-    width: 74%;
+    width: 77%;
     background: #62d1ba;
     position: absolute;
     top: 50%;
-    left: 75px;
+    left: 60px;
   }
 
   @media (min-width: $tablet-width) {
     flex-basis: 25%;
+    margin-top: 16px;
 
-    &::before {
+    &::after {
       content: "";
       display: none;
     }
@@ -67,35 +72,53 @@
   @media (min-width: $desktop-width) {
     flex-basis: 17%;
     text-align: center;
+    padding-right: 15px;
   }
 }
 
 .form__filter-item {
   border: none;
   margin: 0;
-  padding-top: 29px;
+  padding-top: 8px;
+  padding-bottom: 3px;
+
+  &--type-collor {
+    padding-top: 29px;
+    padding-bottom: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 27px;
   }
 }
 
 .form__filter-list {
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
-  padding-bottom: 43px;
-  padding-left: 55px;
+  padding-top: 24px;
+  padding-bottom: 0;
+  padding-left: 39px;
   list-style: none;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-basis: 75%;
+    column-gap: 68px;
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 19px;
+  }
+}
+
+.form__list-type {
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
   }
 }
 
@@ -105,17 +128,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 83%;
+    flex-basis: 85%;
   }
 }
 
 .form__list-color > .form__list-item {
   @media (min-width: $tablet-width) {
-    flex-basis: 50%;
+    flex-basis: 42%;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 33%;
+    flex-basis: 29%;
   }
 }
 
@@ -124,24 +147,30 @@
   font-weight: bold;
   position: relative;
   display: block;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  margin-bottom: 11px;
+  padding-top: 2px;
+  padding-bottom: 0;
+  //margin-bottom: 11px;
 
   &--type {
     padding-left: 19px;
+    padding-top: 11px;
+    padding-bottom: 12px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 23px;
+      padding: 30px 0 19px 41px;
+      margin-bottom: 24px;
     }
   }
 
   &--collor {
     padding-left: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
+    padding-top: 11px;
+    padding-bottom: 12px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 30px;
+      padding-left: 43px;
+      margin-bottom: 26px;
     }
   }
 
@@ -164,7 +193,7 @@
 .form__control-mark {
   position: absolute;
   top: 50%;
-  left: -56px;
+  left: -42px;
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
@@ -175,6 +204,7 @@
 
   @media (min-width: $tablet-width) {
     @include size-block(52px, 52px);
+    left: -38px;
   }
 
   &:hover {
@@ -215,10 +245,23 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 32px;
-  height: 22px;
+  width: 24px;
+  height: 16px;
   content: "";
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/tick-mobile.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    background-image: url("../img/tick.svg");
+    width: 32px;
+    height: 22px;
+  }
 }
 
 .form__wrapper {
@@ -230,6 +273,7 @@
     flex-basis: 75%;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -237,13 +281,38 @@
   }
 }
 
-.form__contacts-item,
+
 .form__middle-name,
 .form__surname,
 .form__name {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+
+  &:not(.form__middle-name) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__contacts-item {
+  display: flex;
+  flex-direction: column;
+
+  &--indent {
+    margin-bottom: 35px;
+
+    .form__title-contact {
+      padding-top: 0;
+      padding-right: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 19px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -254,14 +323,12 @@
 .form__surname > .form__filter-label,
 .form__name > .form__filter-label {
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
-    padding-right: 25px;
+    padding-top: 16px;
+    padding-right: 26px;
   }
-}
 
-.form__contacts-item {
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
+  @media (min-width: $desktop-width) {
+    padding-right: 22px;
   }
 }
 
@@ -272,18 +339,20 @@
 }
 
 .form__input {
+  font-family: "Open Sans", sans-serif;
   border: none;
   outline: none;
   border-bottom: 2px solid #000000;
 
   @include size-font(17px, 18px);
   width: 100%;
-  padding: 16px 18px 18px 0;
+  padding: 18px 18px 13px 0;
   color: $base-color;
 
   @media (min-width: $tablet-width) {
     @include size-font(19px, 18px);
     padding-left: 18px;
+    padding-top: 13px;
   }
 
   &:hover {
@@ -296,6 +365,8 @@
 }
 
 .form__contacts {
+  padding-top: 21px;
+  padding-bottom: 27px;
   margin: 0;
   border: none;
 
@@ -339,19 +410,36 @@
 
 .form__title-contact {
   display: flex;
-  margin: 0;
+  margin: 0 0 4px 0;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
   }
 }
 
 .form__decoration-email,
 .form__decoration-phone {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 13px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: 2px;
+  }
 }
 
 .form__fill-field,
@@ -359,13 +447,17 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 0;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   margin: 0;
   border: none;
 
   .form__item-title {
     margin-top: 10px;
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -373,6 +465,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -383,20 +476,26 @@
 .form__additionally {
   @media (min-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 53px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
   }
 }
 
 .form__additionally-field {
+  font-family: "Open Sans", sans-serif;
   display: inline-block;
   width: 100%;
-  min-height: 128px;
+  min-height: 141px;
   padding: 17px;
   border: 2px solid #444444;
 
-  @include size-font(19px, 18px);
+  @include size-font(17px, 18px);
 
   @media (min-width: $tablet-width) {
+    @include size-font(19px, 18px);
     flex-basis: 75%;
   }
 
@@ -442,5 +541,9 @@
     margin-left: auto;
     padding-top: 10px;
     order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
   }
 }

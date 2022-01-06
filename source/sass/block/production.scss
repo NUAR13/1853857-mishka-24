@@ -1,9 +1,13 @@
 .production {
   padding-bottom: 58px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 69px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 27px;
-    padding-bottom: 105px;
+    padding-top: 5px;
+    padding-bottom: 103px;
   }
 }
 
@@ -13,13 +17,13 @@
   display: flex;
   align-items: center;
   padding-left: 91px;
-  padding-top: 21px;
+  padding-top: 24px;
   padding-bottom: 26px;
   order: -1;
   background-image: url("../img/camera.svg");
   background-repeat: no-repeat;
   background-size: 32px 22px;
-  background-position: 25px;
+  background-position: left 33px top 36px;
 
   @media (min-width: $tablet-width) {
     @include size-font (20px, 24px);
@@ -29,9 +33,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 42px 47px;
+    background-position: 53px 46px;
     order: 0;
-    padding: 96px 68px 24px 42px;
+    padding: 96px 68px 24px 54px;
   }
 }
 
@@ -57,7 +61,8 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: 100%;
+    min-height: 455px;
+    object-fit: cover;
   }
 }
 
@@ -70,6 +75,10 @@
 
   &:hover svg {
     transform: scale(1.2);
+
+    .production__link-elem {
+      display: none;
+    }
   }
 
   &:active svg {
@@ -82,15 +91,16 @@
   @include size-font (13px, 24px);
   text-align: start;
   color: $base-color;
+  margin-top: 6px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     @include size-font (15px, 30px);
     margin-top: 0;
-    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 54px;
   }
 }
 
@@ -133,7 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 42px 60px;
+    padding: 0 53px 58px;
   }
 }
 

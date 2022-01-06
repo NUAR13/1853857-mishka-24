@@ -2,15 +2,13 @@
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 111px;
+    padding-top: 112px;
   }
-  /*
-  padding-top: 111px;
-  padding-bottom: 57px;*/
 }
 
 .card-product__list {
@@ -27,7 +25,6 @@
 
 .card-product__item {
   outline: 1px solid #ececec;
-  min-height: 374px;
   margin-bottom: 30px;
   width: 100%;
 
@@ -35,7 +32,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 714px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,20 +75,34 @@
 }
 
 .card-product__container {
-  padding: 26px 28px 24px;
-}
-
-.card-product__wrapper {
-  padding: 0 0 12px;
-  border-bottom: 2px solid #ececec;
-  min-height: 98px;
+  padding: 24px 28px 28px;
 
   @media (min-width: $tablet-width) {
-    min-height: 260px;
+    padding: 23px 34px 24px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 125px;
+    padding: 23px 35px 24px 26px;
+  }
+}
+
+.card-product__wrapper {
+  padding: 4px 0 16px;
+  border-bottom: 2px solid #ececec;
+
+  &--indent {
+    @media (min-width: $desktop-width) {
+      padding-top: 4px;
+      padding-bottom: 13px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 102px;
   }
 }
 
@@ -132,7 +143,7 @@
   display: flex;
   justify-content: space-between;
   align-self: center;
-  margin-top: 23px;
+  margin-top: 21px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
@@ -157,6 +168,7 @@
 .card-product__button-basket {
   @include size-block(25px, 22px);
   position: relative;
+  cursor: pointer;
   border: none;
   background-color: #ffffff;
 
@@ -171,11 +183,5 @@
 }
 
 .card-product__basket-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
   opacity: 0.2;
 }

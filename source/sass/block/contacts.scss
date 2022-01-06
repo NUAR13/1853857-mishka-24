@@ -1,10 +1,14 @@
 .contacts {
   padding-top: 18px;
-  padding-bottom: 39px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     padding-top: 34px;
-    padding-bottom: 59px;
+    padding-bottom: 55px;
+    background-image: url("../img/flag.svg");
+    background-repeat: no-repeat;
+    background-size: 51px 82px;
+    background-position: top 47px right 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +18,8 @@
     padding-top: 71px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 105px;
+    padding-bottom: 103px;
+    background-position: top 130px left 112px;
   }
 }
 
@@ -22,6 +27,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     padding: 0;
+    margin-bottom: 83px;
   }
 }
 
@@ -37,8 +43,8 @@
     @include size-font(53px, 57px);
     grid-column: 2/4;
     grid-row: 1/2;
-    margin-top: 79px;
-    margin-bottom: 34px;
+    margin-top: 77px;
+    margin-bottom: 35px;
   }
 }
 
@@ -62,7 +68,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 24px;
   }
 }
 
@@ -73,6 +79,10 @@
   & a {
     text-decoration: none;
     border-bottom: 1px solid #62d1ba;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 4px;
+    }
   }
 }
 
@@ -116,7 +126,12 @@
 
 .contacts__map-conteiner {
   margin-top: 62px;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 55px;
+  }
 
   .contacts__map-icon {
     display: block;

@@ -4,22 +4,26 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 22px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 }
 
 .info__heading {
   @include size-font(25px, 30px);
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     @include size-font(43px,50px);
     flex-basis: 100%;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,11 +43,13 @@
     grid-auto-flow: row;
     grid-template-rows: repeat(3, auto);
     row-gap: 28px;
+    margin-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
     grid-row: 2/3;
+    margin-right: 0;
   }
 
   &--second {
@@ -56,38 +62,44 @@
 
 .info__item {
   @include size-font(17px, 20px);
-  padding-top: 62px;
-  padding-bottom: 21px;
+  padding-top: 57px;
+  padding-bottom: 26px;
   font-weight: bold;
 
   &--flower {
     background-image: url("../img/icon-1.svg");
+    background-position: top 1px left 9px;
   }
 
   &--clew {
     background-image: url("../img/icon-2.svg");
+    background-position: top 5px left 4px;
   }
 
   &--bill {
     background-image: url("../img/icon-3.svg");
+    background-position: top 2px left 2px;
   }
 
   &--rocket {
     background-image: url("../img/icon-4.svg");
+    background-position: top 5px left 0;
   }
 
   &--like {
     background-image: url("../img/icon-5.svg");
+    background-position: top 6px left 9px;
   }
 
   &--present {
     background-image: url("../img/icon-6.svg");
+    background-position: top 2px left 4px;
   }
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     @include size-font(20px, 22px);
-
+    padding-bottom: 27px;
     max-width: 315px;
   }
 }
