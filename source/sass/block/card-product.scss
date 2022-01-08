@@ -54,6 +54,10 @@
   min-width: 260px;
   min-height: 195px;
 
+  &:focus {
+    outline: 2px solid #63d1bb;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 334px;
     min-height: 334px;
@@ -82,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 35px 24px 26px;
+    padding: 25px 35px 24px 26px;
   }
 }
 
@@ -91,6 +95,12 @@
   border-bottom: 2px solid #ececec;
 
   &--indent {
+    padding: 3px 0 17px;
+
+    @media (min-width: $tablet-width) {
+      padding: 4px 0 17px;
+    }
+
     @media (min-width: $desktop-width) {
       padding-top: 4px;
       padding-bottom: 13px;
@@ -111,6 +121,13 @@
 
   &:hover .card-product__heading {
     opacity: 0.6;
+  }
+
+  &:focus {
+    .card-product__heading {
+      color: #63d1bb;
+    }
+    outline: none;
   }
 
   &:active .card-product__heading {
@@ -175,6 +192,10 @@
   &:hover .card-product__basket-icon {
     fill: #63d1bb;
     opacity: 1;
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
   }
 
   &:active .card-product__basket-icon {

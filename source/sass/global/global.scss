@@ -1,22 +1,3 @@
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 700;
-  font-style: normal;
-
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
 *,
 *::before,
 *::after {
@@ -30,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $main-font, $fallback-font, sans-serif;
   font-size: 17px;
   line-height: 24px;
   display: flex;
@@ -95,8 +76,12 @@ img {
   border: 2px solid #444444;
 
   &:hover {
-    background: linear-gradient(0deg, #444444, #444444);
+    background: #444444;
     color: #ffffff;
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
   }
 
   &:active {

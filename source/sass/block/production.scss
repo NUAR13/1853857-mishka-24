@@ -2,7 +2,7 @@
   padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 69px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +79,10 @@
     .production__link-elem {
       display: none;
     }
+  }
+
+  &:focus {
+    outline: 2px solid #ffffff;
   }
 
   &:active svg {

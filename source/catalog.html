@@ -22,16 +22,16 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1150px)" width="149" height="72" srcset="img/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" width="113" height="46" srcset="img/mishka-logo-tablet.svg">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
           <img class="navigation__logo-icon" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
         </picture>
       </a>
@@ -69,12 +69,12 @@
   </header>
   <main class="main-catalog">
     <section class="menu-inner indentation">
-      <div class="menu__product-info">
-        <div class="menu__product-desktop">
-          <a class="menu__link menu__link--new" href="#">Новые поступления</a>
-          <a class="menu__link menu__link--scale" href="#">Распродажа</a>
+      <div class="menu-inner__product-info">
+        <div class="menu-inner__product-desktop">
+          <a class="menu-inner__link menu-inner__link--new" href="#">Новые поступления</a>
+          <a class="menu-inner__link menu-inner__link--scale" href="#">Распродажа</a>
         </div>
-        <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
+        <a class="menu-inner__link menu-inner__link--delivery" href="#">Бесплатная доставка по России</a>
       </div>
       <h1 class="menu-inner__heading">Каталог товаров</h1>
     </section>
@@ -86,7 +86,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/hare-desktop.jpg 1x, img/hare-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/hare-tablet.jpg 1x, img/hare-tablet@2x.jpg 2x">
-              <img class="card-product__img" src="img/hare-mobile.jpg" srcset="img/hare-mobile@2x.jpg 2x" width="260" height="195">
+              <img class="card-product__img" src="img/hare-mobile.jpg" srcset="img/hare-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный заяц">
             </picture>
           </a>
           <div class="card-product__container">
@@ -111,7 +111,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/basket-desktop.jpg 1x, img/basket-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
-              <img class="card-product__img" src="img/basket-mobile.jpg" srcset="img/basket-mobile@2x.jpg 2x" width="260" height="195">
+              <img class="card-product__img" src="img/basket-mobile.jpg" srcset="img/basket-mobile@2x.jpg 2x" width="260" height="195" alt="Bязаная корзина">
             </picture>
           </a>
           <div class="card-product__container">
@@ -136,7 +136,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/big-basket-desktop.jpg 1x, img/big-basket-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/big-basket-tablet.jpg 1x, img/big-basket-tablet@2x.jpg 2x">
-              <img class="card-product__img" src="img/big-basket-mobile.jpg" srcset="img/big-basket-mobile@2x.jpg 2x" width="260" height="195">
+              <img class="card-product__img" src="img/big-basket-mobile.jpg" srcset="img/big-basket-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзина">
             </picture>
           </a>
           <div class="card-product__container">
@@ -185,7 +185,7 @@
     </section>
   </main>
   <footer class="footer-page indentation">
-    <a class="footer-page__logo">
+    <a class="footer-page__logo" href="index.html">
       <svg class="footer-page__logo-icon" width="102" height="35" aria-hidden="true" focusable="false" viewBox="0 0 102 35">
         <use xlink:href="img/icons/sprite.svg#logo-footer.svg"></use>
       </svg>
@@ -208,7 +208,7 @@
       <li class="footer-page__item">
         <a class="footer-page__link" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
           <svg class="footer-page__link-icon" width="25" height="20" aria-hidden="true" focusable="false" viewBox="0 0 25 20">
-            <use xlink:href="img/icons/sprite.svg#twitter.svg">
+            <use xlink:href="img/icons/sprite.svg#twitter.svg"></use>
           </svg>
         </a>
       </li>
@@ -217,7 +217,7 @@
       <p class="footer-page__about about-text">Разработано</p>
       <a class="footer-page__link" href="https://htmlacademy.ru/" aria-label="Логотип Академии">
         <svg class="footer-page__link-icon footer-page__link-icon--htmlacademy" width="28" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 35">
-          <use xlink:href="img/icons/sprite.svg#htmlacademy.svg">
+          <use xlink:href="img/icons/sprite.svg#htmlacademy.svg"></use>
         </svg>
       </a>
     </div>

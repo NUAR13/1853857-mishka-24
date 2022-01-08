@@ -1,12 +1,16 @@
 .footer-page {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
   padding-top: 21px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding-top: 51px;
     padding-bottom: 38px;
   }
@@ -23,6 +27,10 @@
 
   &:hover .footer-page__logo-icon {
     fill: #46c1ae;
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
   }
 
   &:active .footer-page__logo-icon {
@@ -62,6 +70,10 @@
 
   &:hover .footer-page__link-icon {
     fill: #46c1ae;
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
   }
 
   &:active .footer-page__link-icon {

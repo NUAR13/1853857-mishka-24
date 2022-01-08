@@ -16,13 +16,16 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
-    padding-bottom: 48px;
+    padding-bottom: 53px;
     background-image: url("../img/review-bg.png");
     background-repeat: no-repeat;
+    background-size: 350px auto;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/review-bg@2x.png");
-      background-size: 700px auto;
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .reviews {
+        background-image: url("../img/review-bg@2x.png");
+      }
     }
 
     &::after {
@@ -67,13 +70,16 @@
     grid-template-columns: 175px 1fr;
     background-image: url("../img/review-bg.png");
     background-repeat: no-repeat;
+    background-size: 350px auto;
     padding-top: 77px;
     padding-bottom: 70px;
     margin-bottom: 0;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/review-bg@2x.png");
-      background-size: 700px auto;
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .reviews {
+        background-image: url("../img/review-bg@2x.png");
+      }
     }
   }
 }
@@ -81,10 +87,6 @@
 
 .reviews__slider-conteiner {
   padding-top: 10px;
-
-  &:nth-child(1) {
-    display: block;
-  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
@@ -134,7 +136,7 @@
 
 .reviews__conteiner {
   padding-top: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
@@ -197,6 +199,8 @@
   height: 52px;
   border: none;
   outline: 1px solid #ececee;
+  padding-top: 14px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     outline: none;
@@ -205,20 +209,20 @@
   @media (min-width: $desktop-width) {
     width: 95px;
   }
-
-  &:hover {
-    background: rgba(255, 255, 255,);
-  }
 }
 
 .reviews__next svg {
   transform: rotate(180deg);
 }
 
-.reviews__link:hover svg {
+.reviews__link:hover {
   opacity: 0.6;
 }
 
-.reviews__link:active svg {
+.reviews__link:focus {
+  outline: 2px solid #59d5bc;
+}
+
+.reviews__link:active {
   opacity: 0.3;
 }

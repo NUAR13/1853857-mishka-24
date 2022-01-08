@@ -22,16 +22,16 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1150px)" width="149" height="72" srcset="img/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" width="113" height="46" srcset="img/mishka-logo-tablet.svg">
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
           <img class="navigation__logo-icon" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
         </picture>
       </a>
@@ -69,12 +69,12 @@
   </header>
   <main class="main-form">
     <section class="menu-inner indentation">
-      <div class="menu__product-info">
-        <div class="menu__product-desktop">
-          <a class="menu__link menu__link--new" href="#">Новые поступления</a>
-          <a class="menu__link menu__link--scale" href="#">Распродажа</a>
+      <div class="menu-inner__product-info">
+        <div class="menu-inner__product-desktop">
+          <a class="menu-inner__link menu-inner__link--new" href="#">Новые поступления</a>
+          <a class="menu-inner__link menu-inner__link--scale" href="#">Распродажа</a>
         </div>
-        <a class="menu__link menu__link--delivery" href="#">Бесплатная доставка по России</a>
+        <a class="menu-inner__link menu-inner__link--delivery" href="#">Бесплатная доставка по России</a>
       </div>
       <h1 class="menu-inner__heading">Вязание на заказ</h1>
     </section>
@@ -85,7 +85,7 @@
       </div>
       <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__filter-item form__filter-item--type-collor indentation">
-          <h3 class="form__item-title">Тип</h3>
+          <h3 class="form__item-title"><span>Тип</span></h3>
           <ul class="form__filter-list form__list-type">
             <li class="form__list-item">
               <label class="form__filter-label form__filter-label--type" for="accessory">
@@ -104,7 +104,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__filter-item form__filter-item--type-collor indentation">
-          <h3 class="form__item-title">Цвет</h3>
+          <h3 class="form__item-title"><span>Цвет</span></h3>
           <ul class="form__filter-list form__list-color">
             <li class="form__list-item">
               <label class="form__filter-label form__filter-label--collor" for="white">
@@ -124,7 +124,7 @@
               <label class="form__filter-label form__filter-label--collor" for="tiffany">
               <input class="form__filter-input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
               <span class="form__control-mark"></span>
-              <span class="form__control-label">«Тиффани»</span>
+              <span class="form__control-label">Тиффани</span>
               </label>
             </li>
             <li class="form__list-item">
@@ -151,7 +151,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__filter-item indentation">
-          <h3 class="form__item-title">ФИО</h3>
+          <h3 class="form__item-title"><span>ФИО</span></h3>
           <div class="form__wrapper">
             <div class="form__name">
               <label class="form__filter-label" for="name">Имя:</label>
@@ -170,30 +170,30 @@
         <fieldset class="form__contacts indentation">
           <legend class="visually-hidden">Контакты клиента</legend>
           <div class="form__contacts-item form__contacts-item--indent">
-            <label class="form__item-title form__title-contact" for="phone">Тел</label>
+            <label class="form__item-title form__title-contact" for="phone"><span>Тел</span></label>
             <div class="form__contacts-container">
               <input class="form__input form__contacts-input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <span class="form__decoration-phone form__decoration-phone--icon">
+              <span class="form__decoration-elem form__decoration-elem--phone">
                 <svg class="form__decoration-icon" width="25" height="24" viewBox="0 0 25 24">
-                  <use xlink:href="img/icons/sprite.svg#phone">
+                  <use xlink:href="img/icons/sprite.svg#phone"></use>
                 </svg>
               </span>
             </div>
           </div>
           <div class="form__contacts-item">
-            <label class="form__item-title form__title-contact" for="e-mail">E-mail</label>
+            <label class="form__item-title form__title-contact" for="e-mail"><span>E-mail</span></label>
             <div class="form__contacts-container">
               <input class="form__input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
-              <span class="form__decoration-email form__decoration-email--icon">
+              <span class="form__decoration-elem form__decoration-elem--email">
                 <svg class="form__decoration-icon" width="32" height="21" viewBox="0 0 32 21">
-                  <use xlink:href="img/icons/sprite.svg#mail">
+                  <use xlink:href="img/icons/sprite.svg#mail"></use>
                 </svg>
               </span>
             </div>
           </div>
         </fieldset>
         <fieldset class="form__additionally indentation">
-          <h3 class="form__item-title">Доп</h3>
+          <h3 class="form__item-title"><span>Доп</span></h3>
           <textarea class="form__additionally-field" name="additionally-field" id="additionally" placeholder="Опишите все ваши пожелания к заказу" cols="15"></textarea>
         </fieldset>
         <div class="form__fill-field indentation">
@@ -205,7 +205,7 @@
 
   </main>
   <footer class="footer-page indentation">
-    <a class="footer-page__logo">
+    <a class="footer-page__logo" href="index.html">
       <svg class="footer-page__logo-icon" width="102" height="35" aria-hidden="true" focusable="false" viewBox="0 0 102 35">
         <use xlink:href="img/icons/sprite.svg#logo-footer.svg"></use>
       </svg>
@@ -228,7 +228,7 @@
       <li class="footer-page__item">
         <a class="footer-page__link" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
           <svg class="footer-page__link-icon" width="25" height="20" aria-hidden="true" focusable="false" viewBox="0 0 25 20">
-            <use xlink:href="img/icons/sprite.svg#twitter.svg">
+            <use xlink:href="img/icons/sprite.svg#twitter.svg"></use>
           </svg>
         </a>
       </li>
@@ -237,7 +237,7 @@
       <p class="footer-page__about about-text">Разработано</p>
       <a class="footer-page__link" href="https://htmlacademy.ru/" aria-label="Логотип Академии">
         <svg class="footer-page__link-icon footer-page__link-icon--htmlacademy" width="28" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 35">
-          <use xlink:href="img/icons/sprite.svg#htmlacademy.svg">
+          <use xlink:href="img/icons/sprite.svg#htmlacademy.svg"></use>
         </svg>
       </a>
     </div>
