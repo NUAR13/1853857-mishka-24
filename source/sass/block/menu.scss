@@ -158,26 +158,18 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  position: absolute;
   min-height: 103px;
   padding: 24px 27px 18px 30px;
   background: #63d1bb;
 
-  &--interior {
-    top: 0;
-    left: 0;
-  }
-
   &--toys {
     background: #56c3b2;
-    right: 0;
-    bottom: 0;
   }
 
   &:hover {
     background: #59d5bc;
-    min-height: 108px;
-    top: -5px;
+    margin-bottom: -5px;
+    padding-bottom: calc(18px + 5px);
   }
 
   @media (min-width: $tablet-width) {
@@ -186,13 +178,8 @@
 
     &:hover {
       background: #59d5bc;
-      min-height: 124px;
-      top: -5px;
-    }
-
-    &--toys {
-      right: 0;
-      top: 0;
+      margin-bottom: -5px;
+      padding-bottom: calc(32px + 5px);
     }
   }
 
