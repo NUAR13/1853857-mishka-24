@@ -155,14 +155,14 @@
   border: none;
 }
 
-.no-js-map {
-  background-image: url("../img/map-mobile.jpg");
+.no-js .contacts__map-conteiner {
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -177,7 +177,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/map-desktop.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

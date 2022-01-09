@@ -58,11 +58,11 @@
   display: block;
   width: 260px;
   height: 150px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 455px;
-    object-fit: cover;
   }
 }
 

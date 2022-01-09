@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="body">
+<body class="body no-js">
   <header class="page-header">
     <nav class="navigation ">
       <a class="navigation__logo">
@@ -19,7 +21,7 @@
           <img class="navigation__logo-icon" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
         </picture>
       </a>
-      <div class="navigation__wrapper no-js">
+      <div class="navigation__wrapper">
         <ul class="navigation__list navigation__list-order">
           <li class="navigation__item navigation__list-order-item">
             <a href="catalog.html">Каталог товаров</a>
@@ -48,7 +50,7 @@
           </li>
         </ul>
       </div>
-      <button class="navigation__toogle navigation__toog no-js-tog" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
+      <button class="navigation__toogle navigation__toog" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
     </nav>
   </header>
   <main class="main-page">
@@ -64,16 +66,16 @@
       <h1 class="menu__main-heading ">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
 
       <ul class="menu__list-product">
-        <li class="menu__product-item menu__product-item--interior">
+        <li class="menu__product-item">
           <a class="menu__product-link menu__product-link--interior" href="catalog.html">Предметы<br>интерьера
             <svg class="menu__product-icon" width="41" height="62" focusable="false">
               <use xlink:href="img/icons/sprite.svg#interior.svg"></use>
             </svg>
             </a>
         </li>
-        <li class="menu__product-item menu__product-item--toys">
-          <a class="menu__product-link" href="catalog.html">Детские<br>игрушки
-          <svg class="menu__product-icon" width="60" height="61" viewBox="0 0 60 61">
+        <li class="menu__product-item">
+          <a class="menu__product-link menu__product-link--toys" href="catalog.html">Детские<br>игрушки
+          <svg class="menu__product-icon menu__product-icon--toys" width="60" height="61" viewBox="0 0 60 61">
             <use xlink:href="img/icons/sprite.svg#toy-svg"></use>
           </svg>
           </a>
@@ -100,13 +102,13 @@
         </ul>
         <div class="product-week__img">
           <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="product-week__set" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="360" height="315" alt="Товар вязаные корзинки">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="product-week__set" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="360" height="315" alt="Товар вязаные корзинки">
           </picture>
         </div>
         <p class="product-week__price price">Цена: 990 руб.</p>
@@ -183,7 +185,7 @@
           </li>
         </ul>
       </div>
-      <div class="contacts__map-conteiner no-js-map">
+      <div class="contacts__map-conteiner">
         <iframe class="contacts__map-icon" src="https://yandex.ru/map-widget/v1/-/CCQxaTVdgC"></iframe>
       </div>
       <a class="button contacts__map-link" href="mailto:info@mimimishkashop.ru">Напишите нам</a>

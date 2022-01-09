@@ -354,7 +354,7 @@
 }
 
 .form__input {
-  font-family: $main-font, $fallback-font, sans-serif;
+  font-family: $font-family-main;
   border: none;
   outline: none;
   border-bottom: 2px solid #000000;
@@ -531,14 +531,17 @@
 }
 
 .form__additionally-field {
-  font-family: "Open Sans", sans-serif;
+  @include size-font(17px, 18px);
+  font-family: $font-family-main;
   display: inline-block;
   width: 100%;
   min-height: 141px;
   padding: 17px;
   border: 2px solid #444444;
 
-  @include size-font(17px, 18px);
+  &::placeholder {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     @include size-font(19px, 18px);
