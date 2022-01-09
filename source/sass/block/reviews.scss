@@ -1,23 +1,68 @@
 .reviews {
-  padding-top: 16px;
+  padding-top: 10px;
   padding-bottom: 51px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-repeat: repeat-x;
+    height: 17px;
+    width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    background-image: url("../img/review-bg.png");
+    padding-top: 16px;
+    padding-bottom: 53px;
+    background-image: url("../img/review-bg@1x.png");
     background-repeat: no-repeat;
+    background-size: 350px auto;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .reviews {
+        background-image: url("../img/review-bg@2x.png");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/zigzag-line-tablet.svg");
+      background-repeat: repeat-x;
+      height: 17px;
+      width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 19px;
+    padding-top: 0;
     padding-bottom: 90px;
     background-image: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 4%;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 100%;
+    }
   }
 }
 
 .reviews__slider {
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-bottom: 52px;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,10 +70,20 @@
     grid-template-columns: 175px 1fr;
     background-image: url("../img/review-bg.png");
     background-repeat: no-repeat;
-    padding-top: 74px;
+    background-size: 350px auto;
+    padding-top: 77px;
     padding-bottom: 70px;
+    margin-bottom: 0;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .reviews {
+        background-image: url("../img/review-bg@2x.png");
+      }
+    }
   }
 }
+
 
 .reviews__slider-conteiner {
   padding-top: 10px;
@@ -75,17 +130,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 42px;
   }
 }
 
 .reviews__conteiner {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
     padding-top: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -97,6 +153,11 @@
   @media (min-width: $tablet-width) {
     @include size-font(18px, 24px);
   }
+
+  @media (min-width: $desktop-width) {
+    @include size-font(17px, 24px);
+    word-spacing: 4px;
+  }
 }
 
 .reviews-button {
@@ -104,34 +165,26 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 50px;
+    top: 77px;
     right: 50px;
     margin: 0;
     width: 175px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 93px;
   }
 }
 
 .reviews__conteiner-arow {
   display: flex;
-  border: 1px solid #ececee;
-  margin: 0 auto 37px;
+  margin: 2px auto 37px;
   width: 260px;
+
 
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
-    bottom: 29px;
+    bottom: 31px;
     width: 173px;
     margin: 0;
     border: none;
-
-    & a {
-      border: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -144,22 +197,32 @@
   display: inline-block;
   width: 50%;
   height: 52px;
+  border: none;
+  outline: 1px solid #ececee;
+  padding-top: 14px;
+  text-align: center;
 
-  background-image: url("../img/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  @media (min-width: $tablet-width) {
+    outline: none;
+  }
 
   @media (min-width: $desktop-width) {
     width: 95px;
-
-    border: none;
   }
 }
 
-.reviews__pref {
-  border-right: 1px solid #ececee;
+.reviews__next svg {
+  transform: rotate(180deg);
 }
 
-.reviews__next {
-  transform: rotate(180deg);
+.reviews__link:hover {
+  opacity: 0.6;
+}
+
+.reviews__link:focus {
+  outline: 2px solid #59d5bc;
+}
+
+.reviews__link:active {
+  opacity: 0.3;
 }

@@ -1,5 +1,6 @@
 .modal-conteiner {
   position: fixed;
+  z-index: 4;
   top: 0;
   left: 0;
   display: none;
@@ -14,7 +15,6 @@
 }
 
 .modal-conteiner__auth {
-  position: relative;
   width: 320px;
   margin: auto;
   padding: 28px 30px 46px;
@@ -71,16 +71,15 @@
 }
 
 .modal-conteiner__button-size {
-  display: flex;
+  display: block;
 
   @include size-font(17px, 16px);
   font-weight: bold;
-  justify-content: center;
-  align-items: center;
   background-color: #ffffff;
   color: $base-color;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
   width: 82px;
   min-height: 52px;
   border: 2px solid rgba(68, 68, 68, 0.1);
@@ -94,19 +93,20 @@
   @media (min-width: $tablet-width) {
     width: 108px;
   }
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .modal-conteiner__button {
-  display: flex;
-
   @include size-font(17px, 16px);
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
   background-color: #63d1bb;
   color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
   width: 100%;
   border: none;
   min-height: 52px;

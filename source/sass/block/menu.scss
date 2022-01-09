@@ -1,5 +1,5 @@
 .menu {
-  background-image: url("../img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -17px;
   background-size: contain;
@@ -7,8 +7,54 @@
   padding-top: 73px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 1px;
     min-height: 600px;
     padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .menu {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/zigzag-tablet.svg");
+      background-repeat: repeat-x;
+      height: 24px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center -1px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -17px;
+      left: 0;
+      background-image: url("../img/zigzag-desktop.svg");
+      background-repeat: repeat-x;
+      height: 34px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .menu {
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
@@ -17,8 +63,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
   }
 }
 
@@ -27,6 +78,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
+    width: 45%;
   }
 }
 
@@ -34,7 +87,7 @@
   @media (min-width: $tablet-width) {
     text-decoration: none;
     color: #000000;
-    padding-right: 50px;
+    margin-right: 63px;
 
     @include size-font(15px,24px);
     font-weight: 700;
@@ -43,13 +96,29 @@
       font-weight: 400;
       margin-left: auto;
       color: $base-color;
-      padding-right: 0;
+      margin-right: 0;
+      padding-top: 2px;
     }
+  }
+
+  &:hover {
+    color: rgb(0%, 0%, 0%, 0.6);
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
+  }
+
+  &:active {
+    border: none;
+    color: rgb(0%, 0%, 0%, 0.3);
   }
 }
 
 .menu__main-heading {
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @include size-font(27px,30px);
   margin-top: 0;
@@ -57,23 +126,26 @@
 
   @media (min-width: $tablet-width) {
     @include size-font(43px,50px);
-    margin-top: 109px;
-    margin-bottom: 372px;
+    margin-top: 112px;
+    margin-bottom: 371px;
   }
 
   @media (min-width: $desktop-width) {
     @include size-font(53px,57px);
-    margin-top: 114px;
-    margin-bottom: 353px;
+    margin-top: 112px;
+    margin-bottom: 355px;
   }
 }
 
 .menu__list-product {
+  width: 100%;
+  min-height: 206px;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    min-height: 119px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -81,33 +153,84 @@
 
 .menu__product-item {
   display: flex;
-  background: #63d1bb;
-  padding-top: 24px;
-  padding-right: 30px;
-  padding-bottom: 18px;
-  padding-left: 36px;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 103px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding: 25px 36px 34px 36px;
   }
 }
 
 .menu__product-link {
-  display: block;
+  @include size-font (19px,24px);
+  position: relative;
   text-decoration: none;
   color: #ffffff;
-  width: 130px;
-
-  @include size-font (19px,24px);
+  width: 100%;
+  padding: 24px 100px 18px 30px;
+  background: #63d1bb;
   font-weight: bold;
   margin-right: auto;
 
+  &--toys {
+    background: #56c3b2;
+  }
+
   @media (min-width: $tablet-width) {
     @include size-font(20px,30px);
+    padding: 27px 100px 32px 36px;
+
+    &:hover {
+      background: #59d5bc;
+      margin-top: -5px;
+      padding-bottom: calc(37px);
+
+      .menu__product-icon {
+        opacity: 0.7;
+      }
+    }
+
+    &--toys:hover {
+      background: #46c1ae;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+  }
+
+  &:focus {
+    outline: 2px solid #000000;
+    border: none;
+  }
+
+  &:active {
+    background: #59d5bc;
+
+    .menu__product-icon {
+      opacity: 0.3;
+    }
+  }
+
+  &--toys:active {
+    background: #46c1ae;
   }
 }
 
-.menu__product-item-bg {
-  background: #56c3b2;
+.menu__product-icon {
+  position: absolute;
+  right: 35px;
+  top: 23px;
+  opacity: 0.5;
+
+  &--toys {
+    right: 27px;
+    top: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 36px;
+    top: 30px;
+  }
 }

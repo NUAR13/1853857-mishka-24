@@ -1,4 +1,5 @@
 .menu-inner {
+  position: relative;
   background-color: #f1f1f1;
   padding-top: 73px;
   padding-bottom: 73px;
@@ -7,10 +8,32 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 75px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      background-image: url("../img/zigzag-tablet.svg");
+      background-repeat: repeat-x;
+      height: 24px;
+      width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 113px;
+    padding-bottom: 111px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/zigzag-desktop-cat.svg");
+      background-repeat: repeat-x;
+      height: 34px;
+      width: 100%;
+    }
   }
 }
 
@@ -26,5 +49,59 @@
 
   @media (min-width: $desktop-width) {
     @include size-font(53px, 57px);
+  }
+}
+
+.menu-inner__product-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
+}
+
+.menu-inner__product-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.menu-inner__link {
+  @media (min-width: $tablet-width) {
+    text-decoration: none;
+    color: #000000;
+    padding-right: 63px;
+
+    @include size-font(15px,24px);
+    font-weight: 700;
+
+    &--delivery {
+      font-weight: 400;
+      margin-left: auto;
+      color: $base-color;
+      padding-right: 0;
+      padding-top: 2px;
+    }
+  }
+
+  &:hover {
+    color: rgb(0%, 0%, 0%, 0.6);
+  }
+
+  &:focus {
+    outline: 2px solid #63d1bb;
+  }
+
+  &:active {
+    border: none;
+    color: rgb(0%, 0%, 0%, 0.3);
   }
 }
